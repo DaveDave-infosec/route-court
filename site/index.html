@@ -62,6 +62,11 @@
   .mandate small { display: block; margin-top: 10px; color: #AEB8C3; font-size: .9rem; font-weight: 400; }
   .mandate::before { content: ""; position: absolute; left: 0; top: 18px; bottom: 18px; width: 5px; background: var(--wall); border-radius: 0 3px 3px 0; }
 
+  .built { display: flex; align-items: center; flex-wrap: wrap; gap: 14px 30px; margin: 30px 0 0; color: var(--ink-2); font-size: .95rem; }
+  .built ul { display: flex; flex-wrap: wrap; gap: 14px 30px; list-style: none; margin: 0; padding: 0; }
+  .built li { display: flex; align-items: center; gap: 10px; font-weight: 800; color: var(--ink); font-size: 1.02rem; }
+  .built img { height: 30px; width: auto; display: block; }
+
   /* Exhibit */
   section { padding: 56px 0; }
   h2 { font-weight: 900; font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.1; letter-spacing: -.015em; margin: 0 0 14px; }
@@ -199,6 +204,14 @@
     <div class="mandate" role="note" aria-label="The user's mandate">
       <p id="mandate-text"></p>
       <small>The mandate the user gave the agent, stored word for word in the agreement.</small>
+    </div>
+    <div class="built" aria-label="Built with">
+      <span>Built with</span>
+      <ul>
+        <li><img src="logos/lifi.png" alt="" width="24" height="30">LI.FI</li>
+        <li><img src="logos/internet-court.png" alt="" width="33" height="30">Internet Court</li>
+        <li><img src="logos/genlayer.png" alt="" width="32" height="30">GenLayer</li>
+      </ul>
     </div>
   </header>
 </div>

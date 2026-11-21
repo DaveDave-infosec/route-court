@@ -1,11 +1,14 @@
 # Logos
 
-Official partner logos only, unmodified, from each project's own brand kit or from the WG admins.
-Never redraw or recolour a partner logo.
+Partner logos are official files, unmodified in shape. All three partner marks are single-colour black on transparent;
+the `-white` files are the same marks in solid white (identical alpha, pixel for pixel) for dark backgrounds.
+Never redraw a partner logo or give it a custom colour.
 
-| File | Source |
-|---|---|
-| lifi.svg (or .png) | LI.FI brand kit |
-| genlayer.svg (or .png) | GenLayer brand kit |
-| internet-court.svg (or .png) | Internet Court, via the WG admins |
-| route-court.png / .svg | Route Court's own mark |
+| Use on light backgrounds | Use on dark backgrounds | Source |
+|---|---|---|
+| LIFI.png | lifi-white.png | LI.FI brand kit |
+| Genlayer.png | genlayer-white.png | GenLayer brand kit |
+| Internetcourt.png | internet-court-white.png | Internet Court (WG admins) |
+| route-court-mark.svg / .png | route-court-mark-reversed.svg / .png | Route Court's own mark |
+
+`route-court-mark-tile*.{svg,png}` are rounded app-icon tiles (avatar, favicon), not for the video.
