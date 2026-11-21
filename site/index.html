@@ -416,7 +416,10 @@
       el("text", { x: x(pick.secs) - 10, y: y(pick.net) - 21, class: "lbl-sub" }, ann).textContent = `${name(pick)}, within 10 minutes`;
     }
     if (recommended && !recommended.inTime) {
-      el("text", { x: x(recommended.secs) - 14, y: y(recommended.net) - 16, class: "lbl-sub", "text-anchor": "end" }, ann).textContent = "LI.FI's recommended route, 18 min";
+      const slowLow = Math.max(...cs.routes.filter((r) => !r.inTime).map((r) => y(r.net)));
+      el("text", { x: wallX + 12, y: slowLow + 34, class: "lbl-sub" }, ann).textContent = "Includes LI.FI's";
+      el("text", { x: wallX + 12, y: slowLow + 52, class: "lbl-sub" }, ann).textContent = "recommended route,";
+      el("text", { x: wallX + 12, y: slowLow + 70, class: "lbl-sub" }, ann).textContent = "18 min";
     }
     if (!reduce) { ann.style.opacity = 0; ann.animate([{ opacity: 0, transform: "translateY(6px)" }, { opacity: 1, transform: "none" }], { duration: 420, delay: 60 + cs.routes.length * 45 + 120, fill: "forwards", easing: "ease-out" }); }
 
