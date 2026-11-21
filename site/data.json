@@ -1,0 +1,481 @@
+{
+  "generatedAt": "2026-11-21T20:27:10.405Z",
+  "repo": "https://github.com/DaveDave-infosec/route-court",
+  "mandate": "Move my USDC from Base to Arbitrum. Pick the cheapest sensible route. It must arrive within 10 minutes. Do not overpay for speed, and avoid multi-hop routes unless they save real money.",
+  "contracts": {
+    "internetCourtFactory": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+    "bridgeReceiver": "0xc3e6ae892a704c875bf74df46ed873308db15d82",
+    "mockUSDC": "0x58C27C7C1Ff5DBF480c956acf6b119508b6FBa4f",
+    "routeJudge": "0xf20126D9bdD345069E0C65B66811E05A22480686"
+  },
+  "wallets": {
+    "USER": "0x7055253B63DAca37c33F1cD265F8ae6A1fb7B63D",
+    "AGENT": "0x68AE9C1f7C578f43A31591a5719F88ED1AFb1B93",
+    "note": "demo wallets, both controlled by the builder"
+  },
+  "guards": [
+    {
+      "guard": "1. non-party raiseDispute",
+      "reason": "Only a party",
+      "tx": "0xe8fe3cd9c8579efec3ced3f2531e6ae0b091e18579e1ec095bb4bf4527e16a40"
+    },
+    {
+      "guard": "2. second raiseDispute by USER",
+      "reason": "Wrong status",
+      "tx": "0xf182a777c161fe7e74b8f3404fb430f7ecbcf87cc6d28cfc8ab62dc6b042d2ca"
+    },
+    {
+      "guard": "4. off-chain hash mismatch",
+      "reason": "Refused before sending",
+      "tx": null
+    },
+    {
+      "guard": "3. late submitEvidence by USER",
+      "reason": "Evidence deadline passed",
+      "tx": "0x949e0842d6d307a962b4b9a68f50651c18443ceed639646f4f67dc03f71f3775"
+    }
+  ],
+  "cases": {
+    "A": {
+      "caseRef": "A-20261121-194815",
+      "agentMode": "faithful",
+      "agentPolicy": "Picks the most money delivered among routes that arrive within 10 minutes.",
+      "capturedAt": "2026-11-21T19:48:15.892Z",
+      "snapshot": {
+        "sha256": "539e868b86e537d358beb29ace18310c387e224d7647cea1303e98bc3f442eb8",
+        "url": "https://github.com/DaveDave-infosec/route-court/blob/main/cases/A-20261121-194815/snapshot.json"
+      },
+      "routes": [
+        {
+          "id": "f609babb-9035-4607-980e-6f54db9523a4",
+          "tools": [
+            "Polymer (Standard)"
+          ],
+          "net": 997.4966,
+          "onTop": 0,
+          "secs": 1080,
+          "hops": 1,
+          "tags": [
+            "RECOMMENDED",
+            "CHEAPEST"
+          ],
+          "inTime": false
+        },
+        {
+          "id": "95935b35-41e5-4770-b1ef-90a8c9c300ec",
+          "tools": [
+            "LI.FI Intents"
+          ],
+          "net": 997.400212,
+          "onTop": 0,
+          "secs": 6,
+          "hops": 1,
+          "tags": [],
+          "inTime": true
+        },
+        {
+          "id": "21ba2e9e-56f2-43c0-83dd-414b628364e1",
+          "tools": [
+            "CCTP + Celer (Standard)"
+          ],
+          "net": 997.397,
+          "onTop": 0,
+          "secs": 1229,
+          "hops": 1,
+          "tags": [],
+          "inTime": false
+        },
+        {
+          "id": "ce736f40-f535-4ef7-bdb4-7ee5f0a22d7e",
+          "tools": [
+            "AcrossV4"
+          ],
+          "net": 997.392012,
+          "onTop": 0,
+          "secs": 1,
+          "hops": 1,
+          "tags": [
+            "FASTEST"
+          ],
+          "inTime": true
+        },
+        {
+          "id": "ee512aee-4f30-4a2e-8170-3771e4fac51b",
+          "tools": [
+            "Relay"
+          ],
+          "net": 997.375226,
+          "onTop": 0,
+          "secs": 1,
+          "hops": 1,
+          "tags": [
+            "FASTEST"
+          ],
+          "inTime": true
+        },
+        {
+          "id": "60ae5558-fe9d-4901-a053-356437120396",
+          "tools": [
+            "CCTP + Mayan"
+          ],
+          "net": 997.29623,
+          "onTop": 0,
+          "secs": 1200,
+          "hops": 1,
+          "tags": [],
+          "inTime": false
+        },
+        {
+          "id": "be361447-b60c-429f-8e23-99dcdecdf81a",
+          "tools": [
+            "NearIntents"
+          ],
+          "net": 997.290215,
+          "onTop": 0,
+          "secs": 34,
+          "hops": 1,
+          "tags": [],
+          "inTime": true
+        },
+        {
+          "id": "247114a0-b8ff-4c1d-9119-7f26e34b6e40",
+          "tools": [
+            "Polymer (Fast)"
+          ],
+          "net": 997.267175,
+          "onTop": 0,
+          "secs": 10,
+          "hops": 1,
+          "tags": [],
+          "inTime": true
+        },
+        {
+          "id": "fd45db28-7cae-4c8f-88f2-995dbdfc08ff",
+          "tools": [
+            "Layerswap"
+          ],
+          "net": 997.208916,
+          "onTop": 0,
+          "secs": 12,
+          "hops": 1,
+          "tags": [],
+          "inTime": true
+        },
+        {
+          "id": "72c22d37-2281-47e9-88b2-9c22a63793d1",
+          "tools": [
+            "Glacis"
+          ],
+          "net": 997.09465,
+          "onTop": 0.3002,
+          "secs": 1231,
+          "hops": 1,
+          "tags": [],
+          "inTime": false
+        },
+        {
+          "id": "7b300341-711a-4df8-b54c-600e5b4bebe9",
+          "tools": [
+            "Mayan (Swift)"
+          ],
+          "net": 997.085696,
+          "onTop": 0,
+          "secs": 3,
+          "hops": 1,
+          "tags": [],
+          "inTime": true
+        },
+        {
+          "id": "14267343-073f-4410-9dbe-726491fba07e",
+          "tools": [
+            "CCTPv2 + Mayan"
+          ],
+          "net": 996.854425,
+          "onTop": 0,
+          "secs": 35,
+          "hops": 1,
+          "tags": [],
+          "inTime": true
+        },
+        {
+          "id": "8071b64c-157e-4eb5-b902-7e33b0144674",
+          "tools": [
+            "StargateV2 (Fast mode)"
+          ],
+          "net": 995.549117,
+          "onTop": 1.3395,
+          "secs": 27,
+          "hops": 1,
+          "tags": [],
+          "inTime": true
+        }
+      ],
+      "chosenId": "95935b35-41e5-4770-b1ef-90a8c9c300ec",
+      "bestId": "95935b35-41e5-4770-b1ef-90a8c9c300ec",
+      "diff": {
+        "bestRouteId": "95935b35-41e5-4770-b1ef-90a8c9c300ec",
+        "netDiffUSD": 0,
+        "netDiffPct": 0,
+        "durationDiffSec": 0,
+        "stepDiff": 0
+      },
+      "genlayer": {
+        "judge": "0xf20126D9bdD345069E0C65B66811E05A22480686",
+        "chain": "GenLayer Studio Next (61997)",
+        "tx": "0x17490da797e667ca54cd668b1c934d55e6bd6491b4007b09435d20028d17aae9",
+        "verdict": "FALSE",
+        "reasoning": "LI.FI Intents was the highest-net route that met the 10-minute requirement, with 6s estimated time and one hop. The faster AcrossV4 and Relay routes delivered less net value, so choosing Intents did not overpay for speed. The cheaper Polymer route was outside the mandated time window, making it not sensible. The agent's choice therefore honored the mandate's wording."
+      },
+      "court": {
+        "agreement": "0x8434312A8A8A048897Bb59Da57838AD1cafcBEF3",
+        "agreementLink": "https://sepolia.basescan.org/address/0x8434312A8A8A048897Bb59Da57838AD1cafcBEF3",
+        "id": 21,
+        "statement": "The route the agent committed to for transfer A-20261121-194815 broke the user's mandate, given the routes LI.FI offered at 2026-11-21T19:48:15.892Z.",
+        "terms": {
+          "escrowUSDC": "5",
+          "evidenceDeadlineSeconds": "900",
+          "maxEvidenceLength": "4000",
+          "joinWindowSeconds": "3600",
+          "joinDeadline": "1795294104"
+        },
+        "createTx": "https://sepolia.basescan.org/tx/0x84dbf36c4c8633b0184e715c2148f6a5c6709a83b277ca3f379205bc90bba7b4",
+        "evidenceTx": "https://sepolia.basescan.org/tx/0x5c372acdd9156f61490cb45072bdd1420a6c794a969c3c384e09534661e49ebb",
+        "evidenceSubmittedBy": "AGENT",
+        "verdict": "FALSE_",
+        "resolutionReasoning": "Resolved by default - only non-initiator submitted evidence",
+        "claimTx": "https://sepolia.basescan.org/tx/0xce901e55790baab3d9afaa0f691fd9c33e4ab939a3e9e63d71e3734f32c8ae63",
+        "balancesBefore": {
+          "USER": "95",
+          "AGENT": "0",
+          "escrow": "5"
+        },
+        "balancesAfter": {
+          "USER": "95",
+          "AGENT": "5",
+          "escrow": "0"
+        }
+      }
+    },
+    "B": {
+      "caseRef": "B-20261121-200925",
+      "agentMode": "preferred",
+      "agentPolicy": "Always uses its hardcoded bridge, StargateV2.",
+      "capturedAt": "2026-11-21T20:09:25.435Z",
+      "snapshot": {
+        "sha256": "5b9b9ef69eb40858869158e2faf55c049f5a3643d77975118683d461f60dd6ea",
+        "url": "https://github.com/DaveDave-infosec/route-court/blob/main/cases/B-20261121-200925/snapshot.json"
+      },
+      "routes": [
+        {
+          "id": "2c019b63-0414-4411-9aa8-42e7cc8a1e72",
+          "tools": [
+            "Polymer (Standard)"
+          ],
+          "net": 997.4966,
+          "onTop": 0,
+          "secs": 1080,
+          "hops": 1,
+          "tags": [
+            "RECOMMENDED",
+            "CHEAPEST"
+          ],
+          "inTime": false
+        },
+        {
+          "id": "665a0552-815b-483e-bc8f-f347d509c507",
+          "tools": [
+            "LI.FI Intents",
+            "Smart Deposits"
+          ],
+          "net": 997.40927,
+          "onTop": 0,
+          "secs": 6,
+          "hops": 2,
+          "tags": [],
+          "inTime": true
+        },
+        {
+          "id": "53806853-e525-4aa7-9a96-b8de8bfe04f7",
+          "tools": [
+            "CCTP + Celer (Standard)"
+          ],
+          "net": 997.397,
+          "onTop": 0,
+          "secs": 1229,
+          "hops": 1,
+          "tags": [],
+          "inTime": false
+        },
+        {
+          "id": "6da53739-f2e9-4801-adbe-7b06404e3555",
+          "tools": [
+            "AcrossV4"
+          ],
+          "net": 997.392003,
+          "onTop": 0,
+          "secs": 1,
+          "hops": 1,
+          "tags": [
+            "FASTEST"
+          ],
+          "inTime": true
+        },
+        {
+          "id": "32f148ee-1219-4f72-a809-25f3d1248d85",
+          "tools": [
+            "Relay"
+          ],
+          "net": 997.37522,
+          "onTop": 0,
+          "secs": 1,
+          "hops": 1,
+          "tags": [
+            "FASTEST"
+          ],
+          "inTime": true
+        },
+        {
+          "id": "38b66acd-c55f-43b1-81ee-e579cf2e4c0b",
+          "tools": [
+            "CCTP + Mayan"
+          ],
+          "net": 997.29623,
+          "onTop": 0,
+          "secs": 1200,
+          "hops": 1,
+          "tags": [],
+          "inTime": false
+        },
+        {
+          "id": "4d7214f0-8882-4664-92be-ee9cb30efaa9",
+          "tools": [
+            "NearIntents"
+          ],
+          "net": 997.288415,
+          "onTop": 0,
+          "secs": 34,
+          "hops": 1,
+          "tags": [],
+          "inTime": true
+        },
+        {
+          "id": "aee48e20-c141-4659-a740-49276cb892ad",
+          "tools": [
+            "Polymer (Fast)"
+          ],
+          "net": 997.267175,
+          "onTop": 0,
+          "secs": 10,
+          "hops": 1,
+          "tags": [],
+          "inTime": true
+        },
+        {
+          "id": "a9f708ed-9cb7-48e0-ad7c-846b80a6e429",
+          "tools": [
+            "Layerswap"
+          ],
+          "net": 997.208943,
+          "onTop": 0,
+          "secs": 12,
+          "hops": 1,
+          "tags": [],
+          "inTime": true
+        },
+        {
+          "id": "7433bd8d-81f8-4894-bffa-9ec24a1634ed",
+          "tools": [
+            "Glacis"
+          ],
+          "net": 997.09485,
+          "onTop": 0.3,
+          "secs": 1231,
+          "hops": 1,
+          "tags": [],
+          "inTime": false
+        },
+        {
+          "id": "b6c4f465-0351-4d07-92ce-10939a11dc76",
+          "tools": [
+            "Mayan (Swift)"
+          ],
+          "net": 997.085705,
+          "onTop": 0,
+          "secs": 3,
+          "hops": 1,
+          "tags": [],
+          "inTime": true
+        },
+        {
+          "id": "2cfafd77-c9b0-4ff0-ade1-b24abdd8b001",
+          "tools": [
+            "CCTPv2 + Mayan"
+          ],
+          "net": 996.854426,
+          "onTop": 0,
+          "secs": 35,
+          "hops": 1,
+          "tags": [],
+          "inTime": true
+        },
+        {
+          "id": "c769bf5a-bd18-47bd-a82c-52d00f57a75c",
+          "tools": [
+            "StargateV2 (Fast mode)"
+          ],
+          "net": 995.550317,
+          "onTop": 1.3383,
+          "secs": 27,
+          "hops": 1,
+          "tags": [],
+          "inTime": true
+        }
+      ],
+      "chosenId": "c769bf5a-bd18-47bd-a82c-52d00f57a75c",
+      "bestId": "665a0552-815b-483e-bc8f-f347d509c507",
+      "diff": {
+        "bestRouteId": "665a0552-815b-483e-bc8f-f347d509c507",
+        "netDiffUSD": 1.858953,
+        "netDiffPct": 0.185895,
+        "durationDiffSec": -21,
+        "stepDiff": -1
+      },
+      "genlayer": {
+        "judge": "0xf20126D9bdD345069E0C65B66811E05A22480686",
+        "chain": "GenLayer Studio Next (61997)",
+        "tx": "0x62dd6b31760875779d0e9267234d39514cc0238c131ed736cfae84ea3c69a341",
+        "verdict": "TRUE",
+        "reasoning": "StargateV2 met the 10-minute limit, but AcrossV4 was also a single-hop route, arrived in 1 second rather than 27 seconds, and delivered $1.8417 more. Avoiding the two-hop LI.FI route could be sensible because it saved only $0.0173 over AcrossV4, but that does not justify choosing StargateV2 over the cheaper, faster single-hop alternative. The evidence establishes no additional benefit that makes StargateV2's higher cost consistent with 'cheapest sensible' or 'do not overpay for speed.'"
+      },
+      "court": {
+        "agreement": "0xac99D4E1f4c23ee96bEBd30D0488734049Fb12Ba",
+        "agreementLink": "https://sepolia.basescan.org/address/0xac99D4E1f4c23ee96bEBd30D0488734049Fb12Ba",
+        "id": 22,
+        "statement": "The route the agent committed to for transfer B-20261121-200925 broke the user's mandate, given the routes LI.FI offered at 2026-11-21T20:09:25.435Z.",
+        "terms": {
+          "escrowUSDC": "5",
+          "evidenceDeadlineSeconds": "900",
+          "maxEvidenceLength": "4000",
+          "joinWindowSeconds": "3600",
+          "joinDeadline": "1795295376"
+        },
+        "createTx": "https://sepolia.basescan.org/tx/0x1d232f517dbeb1ea12aec190a5fff33bef1895b7b0a7064aa793ac9a85f4a032",
+        "evidenceTx": "https://sepolia.basescan.org/tx/0xc4a4aa6285bcbe84f2cefe15629e3f2ea948278c7b1c8d67f8b48642a9ffabd0",
+        "evidenceSubmittedBy": "USER",
+        "verdict": "TRUE_",
+        "resolutionReasoning": "Resolved by default - only dispute initiator submitted evidence",
+        "claimTx": "https://sepolia.basescan.org/tx/0xbb0e6e79ef08dfa92b8da183430401cb95a56453f41e7a8321187835a22a2ff3",
+        "balancesBefore": {
+          "USER": "90",
+          "AGENT": "5",
+          "escrow": "5"
+        },
+        "balancesAfter": {
+          "USER": "95",
+          "AGENT": "5",
+          "escrow": "0"
+        }
+      }
+    }
+  }
+}

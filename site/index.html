@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Route Court: was it the route you asked for?</title>
+<meta name="description" content="An AI agent picked a LI.FI route with your money. Internet Court holds its fee, GenLayer judges the choice against the routes LI.FI really offered.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,600;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EEF1F4;
+    --paper-2: #E2E7EC;
+    --ink: #17202A;
+    --ink-2: #4A5866;
+    --route: #8A96A3;
+    --pick: #C2255C;
+    --best: #1C7C54;
+    --wall: #E8A317;
+    --measure: 68ch;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); color: var(--ink); }
+  body {
+    margin: 0;
+    font-family: "Overpass", system-ui, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.55;
+    font-variant-numeric: tabular-nums;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { text-decoration-thickness: 2px; }
+  :focus-visible { outline: 3px solid var(--wall); outline-offset: 3px; }
+  code, pre { font-family: ui-monospace, "Cascadia Mono", Menlo, monospace; font-size: .9em; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+
+  /* Top bar: the route itself, Base to Arbitrum, drawn as a line */
+  .bar { display: flex; align-items: center; justify-content: space-between; padding: 22px 0; }
+  .brand { font-weight: 900; font-size: 1.15rem; letter-spacing: -.01em; text-decoration: none; display: flex; align-items: center; gap: 10px; }
+  .brand svg { display: block; }
+  .bar nav { display: flex; gap: 22px; font-size: .95rem; }
+
+  /* Hero: the question, set like a road sign */
+  header.hero { padding: 48px 0 28px; }
+  h1 {
+    font-weight: 900; font-size: clamp(2.6rem, 6.4vw, 5.2rem); line-height: .98; letter-spacing: -.025em;
+    margin: 0; max-width: 15ch;
+  }
+  h1 .q { display: block; color: var(--ink-2); font-weight: 800; }
+  .lede { max-width: var(--measure); font-size: 1.2rem; margin: 26px 0 0; color: var(--ink); }
+
+  .mandate {
+    margin: 34px 0 0; max-width: 780px;
+    background: var(--ink); color: var(--paper);
+    border-radius: 10px; padding: 22px 26px 22px 26px;
+    position: relative;
+  }
+  .mandate p { margin: 0; font-size: 1.22rem; line-height: 1.45; font-weight: 600; }
+  .mandate small { display: block; margin-top: 10px; color: #AEB8C3; font-size: .9rem; font-weight: 400; }
+  .mandate::before { content: ""; position: absolute; left: 0; top: 18px; bottom: 18px; width: 5px; background: var(--wall); border-radius: 0 3px 3px 0; }
+
+  /* Exhibit */
+  section { padding: 56px 0; }
+  h2 { font-weight: 900; font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.1; letter-spacing: -.015em; margin: 0 0 14px; }
+  h3 { font-weight: 800; font-size: 1.2rem; margin: 0 0 8px; }
+  .intro { max-width: var(--measure); margin: 0 0 22px; color: var(--ink-2); }
+
+  .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 18px; }
+  .tabs button {
+    font: inherit; font-weight: 800; font-size: 1rem; cursor: pointer;
+    border: 2px solid var(--ink); background: transparent; color: var(--ink);
+    padding: 9px 18px 7px; border-radius: 999px;
+  }
+  .tabs button[aria-selected="true"] { background: var(--ink); color: var(--paper); }
+
+  .exhibit { background: #F8FAFB; border: 1px solid #CDD5DD; border-radius: 14px; padding: 20px 20px 14px; }
+  .exhibit svg { width: 100%; height: auto; display: block; overflow: visible; }
+  .readout { min-height: 1.6em; margin: 6px 4px 0; color: var(--ink-2); font-size: .98rem; }
+  .readout strong { color: var(--ink); }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 10px 4px 0; font-size: .95rem; color: var(--ink-2); }
+  .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .swatch { width: 22px; height: 5px; border-radius: 3px; display: inline-block; }
+
+  .verdict { display: grid; grid-template-columns: 1.25fr 1fr; gap: 40px; margin-top: 34px; }
+  .verdict .label { font-weight: 800; font-size: 1rem; color: var(--ink-2); margin: 0 0 6px; }
+  .verdict .ruling { font-weight: 900; font-size: 2rem; line-height: 1.05; margin: 0 0 14px; letter-spacing: -.01em; }
+  .ruling.refund { color: var(--pick); }
+  .ruling.paid { color: var(--best); }
+  blockquote { margin: 0; padding: 0 0 0 18px; border-left: 3px solid var(--ink); font-size: 1.08rem; line-height: 1.6; max-width: 62ch; }
+  .fineprint { font-size: .9rem; color: var(--ink-2); margin-top: 12px; }
+  .fineprint a { word-break: break-all; }
+
+  .money { width: 100%; border-collapse: collapse; font-size: 1rem; margin: 4px 0 12px; }
+  .money th, .money td { text-align: right; padding: 7px 0; border-bottom: 1px solid #CDD5DD; }
+  .money th:first-child, .money td:first-child { text-align: left; }
+  .money th { font-weight: 600; color: var(--ink-2); font-size: .9rem; }
+  .money td.up { color: var(--best); font-weight: 800; }
+
+  details { margin-top: 30px; }
+  summary { cursor: pointer; font-weight: 800; }
+  .routes { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: .95rem; }
+  .routes th, .routes td { padding: 8px 10px 6px; border-bottom: 1px solid #D6DDE3; text-align: right; white-space: nowrap; }
+  .routes th:first-child, .routes td:first-child { text-align: left; white-space: normal; }
+  .routes th { color: var(--ink-2); font-weight: 600; font-size: .88rem; }
+  .routes tr.is-pick td:first-child { box-shadow: inset 5px 0 0 var(--pick); padding-left: 14px; font-weight: 800; }
+  .routes tr.is-best td:first-child { box-shadow: inset 5px 0 0 var(--best); padding-left: 14px; font-weight: 800; }
+  .routes tr.slow td { color: #8E98A2; }
+  .table-scroll { overflow-x: auto; }
+
+  /* Sequence */
+  .steps { list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px 34px; counter-reset: s; }
+  .steps li { counter-increment: s; position: relative; padding-top: 44px; }
+  .steps li::before {
+    content: counter(s); position: absolute; top: 0; left: 0;
+    width: 32px; height: 32px; border-radius: 50%; background: var(--ink); color: var(--paper);
+    font-weight: 900; display: grid; place-items: center; font-size: .95rem; padding-top: 2px;
+  }
+  .steps li::after { content: ""; position: absolute; top: 15px; left: 40px; right: -26px; height: 3px; background: var(--route); border-radius: 2px; }
+  .steps li:nth-child(3n)::after, .steps li:last-child::after { display: none; }
+  .steps h3 { font-size: 1.08rem; }
+  .steps p { margin: 0; color: var(--ink-2); font-size: .98rem; }
+  .where { display: inline-block; font-size: .85rem; font-weight: 600; color: var(--ink); background: var(--paper-2); border-radius: 4px; padding: 2px 7px 0; margin-bottom: 6px; }
+
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; }
+  .two p { max-width: 60ch; }
+  .note { background: var(--paper-2); border-radius: 12px; padding: 22px 24px; }
+  .note h3 { margin-bottom: 6px; }
+  .note p { margin: 0; }
+
+  pre { background: var(--ink); color: #E3E9EF; padding: 16px 18px; border-radius: 10px; overflow-x: auto; line-height: 1.55; margin: 10px 0 0; }
+  .levels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 24px; }
+  .levels p { margin: 0; color: var(--ink-2); font-size: .98rem; }
+
+  .facts-list { margin: 0; padding: 0; list-style: none; }
+  .facts-list li { padding: 9px 0; border-bottom: 1px solid #CDD5DD; display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+  .facts-list li span:first-child { color: var(--ink-2); }
+  .facts-list code { word-break: break-all; }
+
+  footer { padding: 40px 0 60px; color: var(--ink-2); font-size: .95rem; border-top: 1px solid #CDD5DD; }
+  footer p { max-width: var(--measure); }
+
+  /* Chart */
+  .ax text { fill: var(--ink-2); font-size: 13px; font-family: "Overpass", sans-serif; }
+  .ax line { stroke: #D3DAE1; }
+  .dot { fill: var(--route); stroke: #F8FAFB; stroke-width: 2; cursor: pointer; transition: r .15s; }
+  .dot:focus { outline: none; stroke: var(--ink); stroke-width: 3; }
+  .lbl { font-family: "Overpass", sans-serif; font-weight: 800; font-size: 15px; }
+  .lbl-sub { font-family: "Overpass", sans-serif; font-size: 13px; fill: var(--ink-2); }
+
+  @media (max-width: 860px) {
+    .verdict, .two, .levels { grid-template-columns: 1fr; gap: 28px; }
+    .steps { grid-template-columns: 1fr; }
+    .steps li::after { display: none; }
+    .bar nav a:not(:last-child) { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bar">
+    <a class="brand" href="#top" aria-label="Route Court home">
+      <svg width="46" height="18" viewBox="0 0 46 18" aria-hidden="true"><line x1="6" y1="9" x2="40" y2="9" stroke="#17202A" stroke-width="4" stroke-linecap="round"/><circle cx="6" cy="9" r="5" fill="#EEF1F4" stroke="#17202A" stroke-width="3"/><circle cx="40" cy="9" r="5" fill="#17202A"/></svg>
+      Route Court
+    </a>
+    <nav aria-label="Page">
+      <a href="#exhibit">The cases</a>
+      <a href="#how">How it works</a>
+      <a href="#verify">Verify</a>
+      <a id="repo-link" href="https://github.com/DaveDave-infosec/route-court">GitHub</a>
+    </nav>
+  </div>
+
+  <header class="hero" id="top">
+    <h1>Your agent picked a route. <span class="q">Was it the one you asked for?</span></h1>
+    <p class="lede">You pay an agent a small fee to move your money across chains. It asks LI.FI for every route and commits to one. If you think it broke your instructions, a court checks the choice against the routes that really existed at that moment, and the fee goes to whoever is right.</p>
+    <div class="mandate" role="note" aria-label="The user's mandate">
+      <p id="mandate-text"></p>
+      <small>The mandate the user gave the agent, stored word for word in the agreement.</small>
+    </div>
+  </header>
+</div>
+
+<section id="exhibit">
+  <div class="wrap">
+    <h2>The exhibit: every route LI.FI offered</h2>
+    <p class="intro">Each dot is one real route for 1,000 USDC from Base to Arbitrum, frozen and hashed at the moment the agent chose. Further right takes longer; higher delivers more. Anything past the amber line breaks the 10 minute rule.</p>
+
+    <div class="tabs" role="tablist" aria-label="Choose a case">
+      <button role="tab" id="tab-B" aria-selected="true" aria-controls="case-panel" data-case="B">Case B: hardcoded bridge</button>
+      <button role="tab" id="tab-A" aria-selected="false" aria-controls="case-panel" data-case="A" tabindex="-1">Case A: faithful agent</button>
+    </div>
+
+    <div id="case-panel" role="tabpanel" aria-labelledby="tab-B">
+      <div class="exhibit">
+        <svg id="chart" viewBox="0 0 1000 470" role="img" aria-labelledby="chart-title"><title id="chart-title">Routes offered by LI.FI</title></svg>
+        <p class="readout" id="readout" aria-live="polite"></p>
+        <div class="legend">
+          <span><i class="swatch" style="background:var(--pick)"></i>Route the agent chose</span>
+          <span><i class="swatch" style="background:var(--best)"></i>Best route that arrives within 10 minutes</span>
+          <span><i class="swatch" style="background:var(--wall)"></i>The mandate's 10 minute limit</span>
+        </div>
+      </div>
+
+      <div class="verdict">
+        <div>
+          <p class="label">GenLayer jury</p>
+          <p class="ruling" id="gl-ruling"></p>
+          <blockquote id="gl-reasoning"></blockquote>
+          <p class="fineprint" id="gl-meta"></p>
+        </div>
+        <div>
+          <p class="label">Internet Court agreement</p>
+          <p class="ruling" id="ic-ruling"></p>
+          <table class="money" aria-label="Fee balances before and after settlement">
+            <thead><tr><th>MockUSDC</th><th>Before ruling</th><th>After</th></tr></thead>
+            <tbody id="money"></tbody>
+          </table>
+          <p class="fineprint" id="ic-meta"></p>
+        </div>
+      </div>
+
+      <details>
+        <summary>See all routes in this snapshot</summary>
+        <div class="table-scroll">
+          <table class="routes">
+            <thead><tr><th>Route</th><th>Delivered, net</th><th>Charged on top</th><th>Time</th><th>Hops</th><th>Within 10 min</th><th>LI.FI tags</th></tr></thead>
+            <tbody id="route-rows"></tbody>
+          </table>
+        </div>
+        <p class="fineprint" id="snap-meta"></p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="how" style="background:var(--paper-2)">
+  <div class="wrap">
+    <h2>How a dispute runs</h2>
+    <p class="intro">Nothing waits on the happy path: if nobody disputes, the agent is paid. The court only runs when the user objects.</p>
+    <ol class="steps">
+      <li><span class="where">LI.FI</span><h3>The agent asks for routes</h3><p>One call returns every route with bridges, fees, timing and hops. The agent commits to one.</p></li>
+      <li><span class="where">Repository</span><h3>The choice is frozen</h3><p>The full response, the mandate and the pick are saved and hashed. Code computes cost, time and hops for every route.</p></li>
+      <li><span class="where">Internet Court, Base Sepolia</span><h3>The fee goes into escrow</h3><p>The user opens an agreement with the agent. The 5 USDC fee sits in it until the case ends.</p></li>
+      <li><span class="where">Internet Court, Base Sepolia</span><h3>The user disputes</h3><p>The user says the route broke the mandate. Both sides argue from the same hashed snapshot.</p></li>
+      <li><span class="where">GenLayer</span><h3>The jury rules</h3><p>Validators each judge the case on their own and must agree. They decide what "sensible" and "overpay" mean here.</p></li>
+      <li><span class="where">Internet Court, Base Sepolia</span><h3>The fee moves</h3><p>The agreement settles to the side the jury ruled for, and that side claims the 5 USDC.</p></li>
+    </ol>
+
+    <div class="two" style="margin-top:50px">
+      <div class="note">
+        <h3>Why the jury is our own GenLayer contract</h3>
+        <p>Internet Court's relay has not delivered a GenLayer verdict on Base Sepolia since 19 March 2026. So the judge is a GenVM v0.4 contract on GenLayer Studio Next, and the side it rules for carries the ruling to the agreement: only that side submits evidence, quoting the GenLayer transaction, and the agreement settles by default to it.</p>
+      </div>
+      <div class="note">
+        <h3>A trap other builders should know</h3>
+        <p>If both parties submit evidence while the relay is down, the agreement moves to a resolving state that only the relay can end. There is no timeout, so the escrow stays locked. Route Court never lets both sides submit until the relay is back.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="verify">
+  <div class="wrap">
+    <h2>Check it yourself</h2>
+    <p class="intro">Clone the repository and run <code>npm install</code>. None of the first two steps needs a wallet.</p>
+    <div class="levels">
+      <div><h3>Watch an agent pick</h3><p>Live LI.FI routes, facts, the pick, the hash and the exact evidence the court would read.</p><pre>npm run dry-run -- --mode preferred</pre></div>
+      <div><h3>Verify both cases</h3><p>Reads Base Sepolia and GenLayer, recomputes each snapshot hash and checks both verdicts match.</p><pre>npm run verify -- --case B</pre></div>
+      <div><h3>Replay a whole case</h3><p>With a little Base Sepolia ETH: escrow, dispute, jury, settlement, claim. About 20 minutes.</p><pre>npm run demo -- --case B</pre></div>
+    </div>
+
+    <div class="two" style="margin-top:46px">
+      <div>
+        <h3>Checks that must fail, and did</h3>
+        <ul class="facts-list" id="guards"></ul>
+      </div>
+      <div>
+        <h3>Contracts</h3>
+        <ul class="facts-list" id="contracts"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer>
+    <p>Route Court is a Builders Working Group demo for Internet Court, built with LI.FI and GenLayer. Route data is real LI.FI mainnet data; the transfers themselves are not executed, because the dispute is about the decision, which is fully captured before execution. Both demo wallets are controlled by the builder. Everything shown here is generated from the committed <a href="https://github.com/DaveDave-infosec/route-court/blob/main/deployments/base-sepolia/manifest.json">manifest</a>.</p>
+  </footer>
+</div>
+
+<script>
+(async function () {
+  const $ = (id) => document.getElementById(id);
+  const data = await fetch("data.json").then((r) => r.json());
+  const BASESCAN = "https://sepolia.basescan.org";
+  const usd = (n) => "$" + n.toFixed(2);
+  const secs = (s) => (s >= 60 ? (s / 60).toFixed(s % 60 ? 1 : 0) + " min" : s + " s");
+  const short = (h) => h.slice(0, 8) + "…" + h.slice(-6);
+  const name = (r) => r.tools.join(" > ");
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  $("mandate-text").textContent = "“" + data.mandate + "”";
+
+  // Static lists
+  $("guards").innerHTML = data.guards.map((g) =>
+    `<li><span>${esc(g.guard.replace(/^\d+\.\s*/, ""))}</span><span>${g.tx ? `<a href="${BASESCAN}/tx/${g.tx}">${esc(g.reason)}</a>` : esc(g.reason)}</span></li>`).join("");
+  const c = data.contracts;
+  $("contracts").innerHTML = [
+    ["Internet Court factory", c.internetCourtFactory, `${BASESCAN}/address/${c.internetCourtFactory}`],
+    ["MockUSDC escrow token", c.mockUSDC, `${BASESCAN}/address/${c.mockUSDC}`],
+    ["Route Court judge, GenLayer Studio Next", c.routeJudge, null],
+  ].map(([k, v, href]) => `<li><span>${k}</span>${href ? `<a href="${href}"><code>${short(v)}</code></a>` : `<code>${v}</code>`}</li>`).join("");
+
+  // Chart geometry
+  const W = 1000, H = 470, M = { l: 78, r: 26, t: 26, b: 52 };
+  const X0 = Math.log10(0.7), X1 = Math.log10(2400);
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (tag, attrs, parent) => { const n = document.createElementNS(NS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); if (parent) parent.appendChild(n); return n; };
+
+  function draw(id) {
+    const cs = data.cases[id];
+    const svg = $("chart");
+    svg.querySelectorAll(":scope > :not(title)").forEach((n) => n.remove());
+    const nets = cs.routes.map((r) => r.net);
+    const yMin = Math.floor((Math.min(...nets) - 0.2) * 2) / 2, yMax = Math.ceil((Math.max(...nets) + 0.1) * 2) / 2;
+    const x = (s) => M.l + ((Math.log10(Math.max(s, 0.7)) - X0) / (X1 - X0)) * (W - M.l - M.r);
+    const y = (v) => H - M.b - ((v - yMin) / (yMax - yMin)) * (H - M.t - M.b);
+
+    // too-slow zone and wall
+    const wallX = x(600);
+    el("rect", { x: wallX, y: M.t, width: W - M.r - wallX, height: H - M.t - M.b, fill: "#E8A317", opacity: 0.09 }, svg);
+    const ax = el("g", { class: "ax" }, svg);
+    for (let v = yMin; v <= yMax + 1e-9; v += 0.5) {
+      el("line", { x1: M.l, x2: W - M.r, y1: y(v), y2: y(v) }, ax);
+      el("text", { x: M.l - 10, y: y(v) + 4, "text-anchor": "end" }, ax).textContent = "$" + v.toFixed(1);
+    }
+    [[1, "1 s"], [10, "10 s"], [60, "1 min"], [600, "10 min"], [1200, "20 min"]].forEach(([s, t]) => {
+      el("line", { x1: x(s), x2: x(s), y1: H - M.b, y2: H - M.b + 6 }, ax);
+      el("text", { x: x(s), y: H - M.b + 24, "text-anchor": "middle" }, ax).textContent = t;
+    });
+    el("text", { x: M.l, y: H - 6 }, ax).textContent = "Estimated arrival time";
+    el("text", { x: 14, y: M.t + 4, transform: `rotate(-90 14 ${M.t + 4})`, "text-anchor": "end" }, ax).textContent = "Delivered after all fees";
+    el("line", { x1: wallX, x2: wallX, y1: M.t - 6, y2: H - M.b, stroke: "#E8A317", "stroke-width": 4, "stroke-linecap": "round" }, svg);
+    el("text", { x: wallX + 12, y: M.t + 18, class: "lbl", fill: "#8A5E00" }, svg).textContent = "Too slow";
+    el("text", { x: wallX + 12, y: M.t + 36, class: "lbl-sub" }, svg).textContent = "past the 10 minute limit";
+
+    const pick = cs.routes.find((r) => r.id === cs.chosenId);
+    const best = cs.routes.find((r) => r.id === cs.bestId);
+    const recommended = cs.routes.find((r) => r.tags.includes("RECOMMENDED"));
+
+    // dots
+    const g = el("g", {}, svg);
+    cs.routes.forEach((r, i) => {
+      const isPick = r.id === pick.id, isBest = r.id === best.id;
+      const d = el("circle", { cx: x(r.secs), cy: y(r.net), r: isPick || isBest ? 10 : 6.5, class: "dot", tabindex: 0,
+        fill: isPick ? "var(--pick)" : isBest ? "var(--best)" : "var(--route)" }, g);
+      el("title", {}, d).textContent = `${name(r)}: ${usd(r.net)} delivered, ${secs(r.secs)}`;
+      const show = () => { $("readout").innerHTML = `<strong>${esc(name(r))}</strong>: ${usd(r.net)} delivered after fees, ${secs(r.secs)}, ${r.hops} hop${r.hops > 1 ? "s" : ""}${r.onTop ? `, ${usd(r.onTop)} charged on top of the quote` : ""}${r.tags.length ? `. LI.FI tags it ${r.tags.join(" and ").toLowerCase()}` : ""}.`; };
+      d.addEventListener("mouseenter", show); d.addEventListener("focus", show);
+      if (!reduce) { d.style.opacity = 0; d.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 260, delay: 60 + i * 45, fill: "forwards" }); }
+    });
+
+    // gap annotation between best and pick
+    const ann = el("g", {}, svg);
+    if (pick.id !== best.id) {
+      const bx = x(best.secs), by = y(best.net), px = x(pick.secs), py = y(pick.net);
+      el("path", { d: `M${bx + 12},${by} H${px} V${py - 12}`, stroke: "var(--pick)", "stroke-width": 3, fill: "none", "stroke-dasharray": "2 7", "stroke-linecap": "round" }, ann);
+      const gapLbl = el("text", { x: px + 16, y: (by + py) / 2 - 4, class: "lbl", fill: "var(--pick)" }, ann);
+      gapLbl.textContent = `${usd(cs.diff.netDiffUSD)} less delivered`;
+      const gapSub = el("text", { x: px + 16, y: (by + py) / 2 + 16, class: "lbl-sub" }, ann);
+      gapSub.textContent = `and ${-cs.diff.durationDiffSec} s slower than the best route`;
+      el("text", { x: px + 16, y: py + 5, class: "lbl", fill: "var(--pick)" }, ann).textContent = `Agent chose ${name(pick)}`;
+      el("text", { x: bx - 10, y: by - 40, class: "lbl", fill: "var(--best)" }, ann).textContent = "Best within 10 minutes";
+      el("text", { x: bx - 10, y: by - 21, class: "lbl-sub" }, ann).textContent = name(best);
+    } else {
+      el("text", { x: x(pick.secs) - 10, y: y(pick.net) - 40, class: "lbl", fill: "var(--best)" }, ann).textContent = "Agent chose the best route";
+      el("text", { x: x(pick.secs) - 10, y: y(pick.net) - 21, class: "lbl-sub" }, ann).textContent = `${name(pick)}, within 10 minutes`;
+    }
+    if (recommended && !recommended.inTime) {
+      el("text", { x: x(recommended.secs) - 14, y: y(recommended.net) - 16, class: "lbl-sub", "text-anchor": "end" }, ann).textContent = "LI.FI's recommended route, 18 min";
+    }
+    if (!reduce) { ann.style.opacity = 0; ann.animate([{ opacity: 0, transform: "translateY(6px)" }, { opacity: 1, transform: "none" }], { duration: 420, delay: 60 + cs.routes.length * 45 + 120, fill: "forwards", easing: "ease-out" }); }
+
+    $("readout").innerHTML = "Hover or tab through the dots to read each route.";
+
+    // verdicts
+    const gl = cs.genlayer, ic = cs.court;
+    const refund = gl.verdict === "TRUE";
+    $("gl-ruling").textContent = refund ? "The route broke the mandate" : "The route honoured the mandate";
+    $("gl-ruling").className = "ruling " + (refund ? "refund" : "paid");
+    $("gl-reasoning").textContent = gl.reasoning;
+    $("gl-meta").innerHTML = `Verdict ${gl.verdict} from the Route Court judge on ${esc(gl.chain)}, transaction <code>${short(gl.tx)}</code>. Validators re-judged the case independently and agreed.`;
+    $("ic-ruling").textContent = refund ? "Fee refunded to the user" : "Fee paid to the agent";
+    $("ic-ruling").className = "ruling " + (refund ? "refund" : "paid");
+    const b0 = ic.balancesBefore, b1 = ic.balancesAfter;
+    const row = (k, a, z) => `<tr><td>${k}</td><td>${a}</td><td class="${Number(z) > Number(a) ? "up" : ""}">${z}</td></tr>`;
+    $("money").innerHTML = row("User", b0.USER, b1.USER) + row("Agent", b0.AGENT, b1.AGENT) + row("Held in the agreement", b0.escrow, b1.escrow);
+    $("ic-meta").innerHTML = `Agreement <a href="${ic.agreementLink}">#${ic.id}</a> settled ${ic.verdict}. <a href="${ic.evidenceTx}">Evidence</a> and <a href="${ic.claimTx}">claim</a> on Basescan.`;
+
+    // table
+    const rows = [...cs.routes].sort((a, b) => b.net - a.net);
+    $("route-rows").innerHTML = rows.map((r) => `<tr class="${r.id === pick.id ? "is-pick" : r.id === best.id ? "is-best" : ""} ${r.inTime ? "" : "slow"}"><td>${esc(name(r))}${r.id === pick.id ? " (agent's pick)" : r.id === best.id ? " (best within 10 min)" : ""}</td><td>${usd(r.net)}</td><td>${r.onTop ? usd(r.onTop) : "none"}</td><td>${secs(r.secs)}</td><td>${r.hops}</td><td>${r.inTime ? "yes" : "no"}</td><td>${r.tags.map((t) => t.toLowerCase()).join(", ") || ""}</td></tr>`).join("");
+    $("snap-meta").innerHTML = `Captured ${new Date(cs.capturedAt).toUTCString()}. Agent policy: ${esc(cs.agentPolicy)} Snapshot sha256 <code>${cs.snapshot.sha256}</code>, <a href="${cs.snapshot.url}">snapshot.json</a>.`;
+  }
+
+  // tabs
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  const select = (t) => {
+    tabs.forEach((b) => { const on = b === t; b.setAttribute("aria-selected", on); b.tabIndex = on ? 0 : -1; });
+    $("case-panel").setAttribute("aria-labelledby", t.id);
+    draw(t.dataset.case);
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener("click", () => select(t));
+    t.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight" || e.key === "ArrowLeft") { const n = tabs[(i + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length]; n.focus(); select(n); }
+    });
+  });
+  draw("B");
+})();
+</script>
+</body>
+</html>

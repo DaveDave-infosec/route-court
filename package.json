@@ -21,7 +21,8 @@
     "guards": "node --env-file-if-exists=.env scripts/50-guards.mjs",
     "manifest": "node --env-file-if-exists=.env scripts/60-manifest.mjs",
     "verify": "node scripts/70-verify.mjs",
-    "demo": "node --env-file-if-exists=.env scripts/demo.mjs"
+    "demo": "node --env-file-if-exists=.env scripts/demo.mjs",
+    "site-data": "node scripts/80-site-data.mjs"
   },
   "dependencies": {
     "viem": "2.54.6",

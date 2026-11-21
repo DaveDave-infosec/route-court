@@ -7,6 +7,8 @@ The agent's fee sits in a real **Internet Court** agreement on Base Sepolia.
 If the user disputes the choice, the **GenLayer** jury judges it against a frozen, hashed snapshot of the routes **LI.FI** actually offered at that moment.
 The verdict decides who gets the fee.
 
+**Website:** https://route-court.vercel.app (the two cases, the route exhibit and every link, generated from the committed manifest)
+
 LI.FI x Internet Court x GenLayer. Builders Working Group mission: "Internet Court: Partner Demo Lab".
 
 ---
@@ -146,6 +148,7 @@ lib/genlayer.mjs    GenLayer Studio Next client
 contracts/route_judge.py           the GenLayer judge (GenVM v0.4)
 contracts/GENVM_V04_NOTES.md       v0.4 API changes we hit (no `gl` object, header rules)
 scripts/00..70, demo.mjs           discovery, capture, open, dispute, resolve, guards, manifest, verify
+site/                              the static website (index.html + data.json from npm run site-data)
 cases/                             frozen snapshots, evidence, verdicts for cases A and B
 deployments/base-sepolia/          manifest.json, guards.json, wallets.json
 discovery/                         Gate 0 findings and the raw LI.FI probe
