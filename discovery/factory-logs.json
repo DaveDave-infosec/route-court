@@ -1,0 +1,4428 @@
+[
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x0f5153486db882962f1bbafad1ab647e57bf6c547c3d5a7ea9ff9955a7567417",
+    "block_number": 57086986,
+    "block_timestamp": "2026-11-10T19:34:26.000000Z",
+    "data": "0x000000000000000000000000cc955bfe47fca91d2f0f9e45ca773bc8556d65cd0000000000000000000000009a88ebbba9e7f52acaf296ae7706f9b16affad690000000000000000000000005a5160eec0435cc20309735715b44898a46b8032",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "partyA",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "partyB",
+            "type": "address"
+          }
+        ],
+        "name": "AgreementCreated",
+        "type": "event"
+      },
+      "method_call": "AgreementCreated(uint256 indexed id, address agreementAddress, address partyA, address partyB)",
+      "method_id": "3d75ba79",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "20"
+        },
+        {
+          "indexed": false,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0xCc955bfe47FcA91D2f0F9E45Ca773bC8556d65cd"
+        },
+        {
+          "indexed": false,
+          "name": "partyA",
+          "type": "address",
+          "value": "0x9A88EbBbA9e7F52aCaf296ae7706f9b16affaD69"
+        },
+        {
+          "indexed": false,
+          "name": "partyB",
+          "type": "address",
+          "value": "0x5A5160Eec0435cc20309735715b44898A46b8032"
+        }
+      ]
+    },
+    "index": 1,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x3d75ba79979d8717211fd8cef09347e9a4192cd272f47cfbc3e0d5c2ee8600d6",
+      "0x0000000000000000000000000000000000000000000000000000000000000014",
+      null,
+      null
+    ],
+    "transaction_hash": "0xd08b6a1262b67ddf1677177f9865beb56dc7ce0739e93692764d492ed82e74cf"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xa314a86e515e1711b4a75c6c8c5487dad5e35d751b5d7bd3a40bc1da6f778c58",
+    "block_number": 57086770,
+    "block_timestamp": "2026-11-10T19:33:42.000000Z",
+    "data": "0x000000000000000000000000b7a08ff8e092023eb7169f42a554261c3b0ebc9a00000000000000000000000036b26d2df45a2838e6fe0f8b3c97cd0033a124cc0000000000000000000000002f7d415a7ec68fe94c589c8ba6d4959e6ac899ae",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "partyA",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "partyB",
+            "type": "address"
+          }
+        ],
+        "name": "AgreementCreated",
+        "type": "event"
+      },
+      "method_call": "AgreementCreated(uint256 indexed id, address agreementAddress, address partyA, address partyB)",
+      "method_id": "3d75ba79",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "19"
+        },
+        {
+          "indexed": false,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0xb7a08FF8E092023eB7169f42a554261c3B0ebc9A"
+        },
+        {
+          "indexed": false,
+          "name": "partyA",
+          "type": "address",
+          "value": "0x36b26d2DF45a2838E6Fe0F8B3c97Cd0033A124Cc"
+        },
+        {
+          "indexed": false,
+          "name": "partyB",
+          "type": "address",
+          "value": "0x2f7d415A7Ec68Fe94c589c8BA6D4959e6AC899Ae"
+        }
+      ]
+    },
+    "index": 0,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x3d75ba79979d8717211fd8cef09347e9a4192cd272f47cfbc3e0d5c2ee8600d6",
+      "0x0000000000000000000000000000000000000000000000000000000000000013",
+      null,
+      null
+    ],
+    "transaction_hash": "0x83a21985e227a85e20f4d6a9a79ad13f8cedb67bf7e21d6825ec5cacc94f5bd9"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x04a8898c1e61d4fc4dcc8610f7b2c7295c8c70725e074c18c4b41328cb647c65",
+    "block_number": 56535302,
+    "block_timestamp": "2026-11-09T12:55:29.000000Z",
+    "data": "0x000000000000000000000000000000000000000000000000000000006af1c2c1",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "DisputeRequested",
+        "type": "event"
+      },
+      "method_call": "DisputeRequested(address indexed agreementAddress, uint256 timestamp)",
+      "method_id": "2e7497ec",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x1A5499A8E9D53857CBaAEa1e978876233aD62568"
+        },
+        {
+          "indexed": false,
+          "name": "timestamp",
+          "type": "uint256",
+          "value": "1794228929"
+        }
+      ]
+    },
+    "index": 4,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x1A5499A8E9D53857CBaAEa1e978876233aD62568",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x2e7497ecbb204909bb00265ac39d128e899a89d90d817e8a095375817e49c8f9",
+      "0x0000000000000000000000001a5499a8e9d53857cbaaea1e978876233ad62568",
+      null,
+      null
+    ],
+    "transaction_hash": "0x75c1f6b98dfac2d0c6d91106c72a6688b7d1cc747e284fea7d469d49a80f855e"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x04a8898c1e61d4fc4dcc8610f7b2c7295c8c70725e074c18c4b41328cb647c65",
+    "block_number": 56535302,
+    "block_timestamp": "2026-11-09T12:55:29.000000Z",
+    "data": "0x",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caseAddress",
+            "type": "address"
+          }
+        ],
+        "name": "CaseRegistered",
+        "type": "event"
+      },
+      "method_call": "CaseRegistered(uint256 indexed id, address indexed caseAddress)",
+      "method_id": "b134485a",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "18"
+        },
+        {
+          "indexed": true,
+          "name": "caseAddress",
+          "type": "address",
+          "value": "0x1A5499A8E9D53857CBaAEa1e978876233aD62568"
+        }
+      ]
+    },
+    "index": 3,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x1A5499A8E9D53857CBaAEa1e978876233aD62568",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0xb134485a23f5d8843534186de5acea21dcfa5d2e600a5c1041500f9a88022af0",
+      "0x0000000000000000000000000000000000000000000000000000000000000012",
+      "0x0000000000000000000000001a5499a8e9d53857cbaaea1e978876233ad62568",
+      null
+    ],
+    "transaction_hash": "0x75c1f6b98dfac2d0c6d91106c72a6688b7d1cc747e284fea7d469d49a80f855e"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xc1eef974cb0f70096f13531a4a5c40fe34e6a43480f11f39cd1bb8d74628719d",
+    "block_number": 39604230,
+    "block_timestamp": "2026-03-31T17:05:48.000000Z",
+    "data": "0x000000000000000000000000c9ae7e8e15a110357b052ed764dab864f5a36a6c0000000000000000000000006f0b4ce7a1872db132b2f6b7743defb30eba698a000000000000000000000000b5fe6011cee8974c24c630afdf3c15f5620925b7",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "partyA",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "partyB",
+            "type": "address"
+          }
+        ],
+        "name": "AgreementCreated",
+        "type": "event"
+      },
+      "method_call": "AgreementCreated(uint256 indexed id, address agreementAddress, address partyA, address partyB)",
+      "method_id": "3d75ba79",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "17"
+        },
+        {
+          "indexed": false,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0xc9AE7E8e15a110357B052ed764dAB864F5a36A6c"
+        },
+        {
+          "indexed": false,
+          "name": "partyA",
+          "type": "address",
+          "value": "0x6f0b4cE7a1872db132b2F6B7743deFb30eBa698a"
+        },
+        {
+          "indexed": false,
+          "name": "partyB",
+          "type": "address",
+          "value": "0xb5fe6011cee8974C24C630AFdf3C15F5620925B7"
+        }
+      ]
+    },
+    "index": 0,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x3d75ba79979d8717211fd8cef09347e9a4192cd272f47cfbc3e0d5c2ee8600d6",
+      "0x0000000000000000000000000000000000000000000000000000000000000011",
+      null,
+      null
+    ],
+    "transaction_hash": "0x1352d7bd6a758c38a968d6f1749310c88cb092651c00e6e2db32fae9dfdc74d9"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x1a7a86ab1c78694128445fdbf8a228d9f572d25fd3ba8717aff3573f9a75d964",
+    "block_number": 39068666,
+    "block_timestamp": "2026-03-19T07:33:40.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint8",
+            "name": "verdict",
+            "type": "uint8"
+          }
+        ],
+        "name": "VerdictReceived",
+        "type": "event"
+      },
+      "method_call": "VerdictReceived(address indexed agreementAddress, uint8 verdict)",
+      "method_id": "7aaf3cff",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x4F0E52342241539F5B4d1cc25DC4c6531049e44c"
+        },
+        {
+          "indexed": false,
+          "name": "verdict",
+          "type": "uint8",
+          "value": "1"
+        }
+      ]
+    },
+    "index": 256,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x7aaf3cfffc49d49d2f7c35e764e856e6231ffd8455e8401579e2de8bc5f66b3a",
+      "0x0000000000000000000000004f0e52342241539f5b4d1cc25dc4c6531049e44c",
+      null,
+      null
+    ],
+    "transaction_hash": "0xfd144f121801b327d73e6ca641565b9cba0e1360ad70b4a0332d3a4c1188f917"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xfdb6e7391c512a59dbb553048ff349b7c65e3b617b6af7857ce27c8b13115934",
+    "block_number": 39068661,
+    "block_timestamp": "2026-03-19T07:33:30.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000069bba6ca",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "DisputeRequested",
+        "type": "event"
+      },
+      "method_call": "DisputeRequested(address indexed agreementAddress, uint256 timestamp)",
+      "method_id": "2e7497ec",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x4F0E52342241539F5B4d1cc25DC4c6531049e44c"
+        },
+        {
+          "indexed": false,
+          "name": "timestamp",
+          "type": "uint256",
+          "value": "1773905610"
+        }
+      ]
+    },
+    "index": 93,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x4F0E52342241539F5B4d1cc25DC4c6531049e44c",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x2e7497ecbb204909bb00265ac39d128e899a89d90d817e8a095375817e49c8f9",
+      "0x0000000000000000000000004f0e52342241539f5b4d1cc25dc4c6531049e44c",
+      null,
+      null
+    ],
+    "transaction_hash": "0xdda9af9a09f51abcc860a680198b445fd38c45cd37047750cde67760abe53610"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xb634215e13a747aca7f76d7d80c4a181947ff4188d8959ebe0225f1e27ac7b3c",
+    "block_number": 39068650,
+    "block_timestamp": "2026-03-19T07:33:08.000000Z",
+    "data": "0x0000000000000000000000004f0e52342241539f5b4d1cc25dc4c6531049e44c000000000000000000000000e9630ba0e3cc2d3bfc58fbe1bbde478f06e4ce87000000000000000000000000ce413ffe2628b60cdaf4413d63d7838b8d4309ac",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "partyA",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "partyB",
+            "type": "address"
+          }
+        ],
+        "name": "AgreementCreated",
+        "type": "event"
+      },
+      "method_call": "AgreementCreated(uint256 indexed id, address agreementAddress, address partyA, address partyB)",
+      "method_id": "3d75ba79",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "16"
+        },
+        {
+          "indexed": false,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x4F0E52342241539F5B4d1cc25DC4c6531049e44c"
+        },
+        {
+          "indexed": false,
+          "name": "partyA",
+          "type": "address",
+          "value": "0xe9630ba0e3cc2d3BFC58fbE1Bbde478f06E4CE87"
+        },
+        {
+          "indexed": false,
+          "name": "partyB",
+          "type": "address",
+          "value": "0xce413FFE2628b60cdaF4413d63d7838B8d4309AC"
+        }
+      ]
+    },
+    "index": 237,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x3d75ba79979d8717211fd8cef09347e9a4192cd272f47cfbc3e0d5c2ee8600d6",
+      "0x0000000000000000000000000000000000000000000000000000000000000010",
+      null,
+      null
+    ],
+    "transaction_hash": "0xd28e9f93d73df7b406be86a5b0d8816b4fda8ad83f8ca54a81b7dfd9e69a4016"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x6dd64df5163f8ac687d2efbfa29b3cd7a65b6a6c712fb304466ab9691ef15ee9",
+    "block_number": 39068630,
+    "block_timestamp": "2026-03-19T07:32:28.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint8",
+            "name": "verdict",
+            "type": "uint8"
+          }
+        ],
+        "name": "VerdictReceived",
+        "type": "event"
+      },
+      "method_call": "VerdictReceived(address indexed agreementAddress, uint8 verdict)",
+      "method_id": "7aaf3cff",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x32cb0d3E1671088CaAfE62E7cBCe1B875876A035"
+        },
+        {
+          "indexed": false,
+          "name": "verdict",
+          "type": "uint8",
+          "value": "1"
+        }
+      ]
+    },
+    "index": 540,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x7aaf3cfffc49d49d2f7c35e764e856e6231ffd8455e8401579e2de8bc5f66b3a",
+      "0x00000000000000000000000032cb0d3e1671088caafe62e7cbce1b875876a035",
+      null,
+      null
+    ],
+    "transaction_hash": "0x609a1c9d815b022f5661d5937a2e7105c7f31598e6cb7aac559ace5700840534"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x35032af500d917a00c14e2f1796116a84313c9d420d4940539a8165cf42cc392",
+    "block_number": 39068625,
+    "block_timestamp": "2026-03-19T07:32:18.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000069bba682",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "DisputeRequested",
+        "type": "event"
+      },
+      "method_call": "DisputeRequested(address indexed agreementAddress, uint256 timestamp)",
+      "method_id": "2e7497ec",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x32cb0d3E1671088CaAfE62E7cBCe1B875876A035"
+        },
+        {
+          "indexed": false,
+          "name": "timestamp",
+          "type": "uint256",
+          "value": "1773905538"
+        }
+      ]
+    },
+    "index": 181,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x32cb0d3E1671088CaAfE62E7cBCe1B875876A035",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x2e7497ecbb204909bb00265ac39d128e899a89d90d817e8a095375817e49c8f9",
+      "0x00000000000000000000000032cb0d3e1671088caafe62e7cbce1b875876a035",
+      null,
+      null
+    ],
+    "transaction_hash": "0xbc3f84508c28e0a3139d47ceda86934a393a8d534686e6d624c13b7e843f0f44"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x73dbf224e931e221ad1560b2f10f61d4b369c3efd03fa467a3599101c3d3f666",
+    "block_number": 39068614,
+    "block_timestamp": "2026-03-19T07:31:56.000000Z",
+    "data": "0x00000000000000000000000032cb0d3e1671088caafe62e7cbce1b875876a035000000000000000000000000e9630ba0e3cc2d3bfc58fbe1bbde478f06e4ce87000000000000000000000000ce413ffe2628b60cdaf4413d63d7838b8d4309ac",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "partyA",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "partyB",
+            "type": "address"
+          }
+        ],
+        "name": "AgreementCreated",
+        "type": "event"
+      },
+      "method_call": "AgreementCreated(uint256 indexed id, address agreementAddress, address partyA, address partyB)",
+      "method_id": "3d75ba79",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "15"
+        },
+        {
+          "indexed": false,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x32cb0d3E1671088CaAfE62E7cBCe1B875876A035"
+        },
+        {
+          "indexed": false,
+          "name": "partyA",
+          "type": "address",
+          "value": "0xe9630ba0e3cc2d3BFC58fbE1Bbde478f06E4CE87"
+        },
+        {
+          "indexed": false,
+          "name": "partyB",
+          "type": "address",
+          "value": "0xce413FFE2628b60cdaF4413d63d7838B8d4309AC"
+        }
+      ]
+    },
+    "index": 27,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x3d75ba79979d8717211fd8cef09347e9a4192cd272f47cfbc3e0d5c2ee8600d6",
+      "0x000000000000000000000000000000000000000000000000000000000000000f",
+      null,
+      null
+    ],
+    "transaction_hash": "0x6479908c54343a79bbdf55bd34f8647ccb3009c30846f2f1f41c0b0d383c2387"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xd8c36b9c7471c2007f3ae475f552f364607d826b588edd2720c70e8bbef0ca14",
+    "block_number": 39012908,
+    "block_timestamp": "2026-03-18T00:35:04.000000Z",
+    "data": "0x0000000000000000000000008b67bab83a42e58f37bab734739cefb070004f180000000000000000000000006e40ddb9d0f797400d896da2197f455fca0129f2000000000000000000000000785d32f2e65436d0422048816f7746ae33206f7e",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "partyA",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "partyB",
+            "type": "address"
+          }
+        ],
+        "name": "AgreementCreated",
+        "type": "event"
+      },
+      "method_call": "AgreementCreated(uint256 indexed id, address agreementAddress, address partyA, address partyB)",
+      "method_id": "3d75ba79",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "14"
+        },
+        {
+          "indexed": false,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x8b67bab83A42E58f37bAB734739Cefb070004F18"
+        },
+        {
+          "indexed": false,
+          "name": "partyA",
+          "type": "address",
+          "value": "0x6E40ddB9D0F797400D896da2197f455Fca0129F2"
+        },
+        {
+          "indexed": false,
+          "name": "partyB",
+          "type": "address",
+          "value": "0x785d32f2e65436d0422048816F7746ae33206F7E"
+        }
+      ]
+    },
+    "index": 61,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x3d75ba79979d8717211fd8cef09347e9a4192cd272f47cfbc3e0d5c2ee8600d6",
+      "0x000000000000000000000000000000000000000000000000000000000000000e",
+      null,
+      null
+    ],
+    "transaction_hash": "0x0436efde49c67ad960090668daa050dff16d47cd445895a9351985c84938eb22"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x47a7c3475f338ff9f3aa782167d7a8f3b2cbf7bc019d820a98a4d4b1747c0017",
+    "block_number": 38883709,
+    "block_timestamp": "2026-03-15T00:48:26.000000Z",
+    "data": "0x0000000000000000000000000e2438e3bf178ae141399cb38695f110fbcc459c000000000000000000000000ba444be47ac0fb4738c6fcb33d19bc03e854b4b5000000000000000000000000278d35035fb589195ed513507ce7e32021659250",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "partyA",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "partyB",
+            "type": "address"
+          }
+        ],
+        "name": "AgreementCreated",
+        "type": "event"
+      },
+      "method_call": "AgreementCreated(uint256 indexed id, address agreementAddress, address partyA, address partyB)",
+      "method_id": "3d75ba79",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "13"
+        },
+        {
+          "indexed": false,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x0E2438e3bF178AE141399cB38695f110FBcC459C"
+        },
+        {
+          "indexed": false,
+          "name": "partyA",
+          "type": "address",
+          "value": "0xbA444Be47ac0Fb4738C6fcb33D19Bc03E854B4B5"
+        },
+        {
+          "indexed": false,
+          "name": "partyB",
+          "type": "address",
+          "value": "0x278D35035fb589195ED513507Ce7e32021659250"
+        }
+      ]
+    },
+    "index": 0,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x3d75ba79979d8717211fd8cef09347e9a4192cd272f47cfbc3e0d5c2ee8600d6",
+      "0x000000000000000000000000000000000000000000000000000000000000000d",
+      null,
+      null
+    ],
+    "transaction_hash": "0xb82df8f4240160714e1a0e70cce97294eaf7ad96a13e297847652dbed858687d"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x1a2d597355ae9499341ca671150021914a4fe746681e0cd0d7d7591921b86ff8",
+    "block_number": 38695480,
+    "block_timestamp": "2026-03-10T16:14:08.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000069b04350",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "DisputeRequested",
+        "type": "event"
+      },
+      "method_call": "DisputeRequested(address indexed agreementAddress, uint256 timestamp)",
+      "method_id": "2e7497ec",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x53FA618a8c2e504842F223D0077CC96694754c8c"
+        },
+        {
+          "indexed": false,
+          "name": "timestamp",
+          "type": "uint256",
+          "value": "1773159248"
+        }
+      ]
+    },
+    "index": 93,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x53FA618a8c2e504842F223D0077CC96694754c8c",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x2e7497ecbb204909bb00265ac39d128e899a89d90d817e8a095375817e49c8f9",
+      "0x00000000000000000000000053fa618a8c2e504842f223d0077cc96694754c8c",
+      null,
+      null
+    ],
+    "transaction_hash": "0x68617a41a70a97f7f2249be4839e9d450893e2518590a4d6420ac90524bab2c0"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x1a2d597355ae9499341ca671150021914a4fe746681e0cd0d7d7591921b86ff8",
+    "block_number": 38695480,
+    "block_timestamp": "2026-03-10T16:14:08.000000Z",
+    "data": "0x",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caseAddress",
+            "type": "address"
+          }
+        ],
+        "name": "CaseRegistered",
+        "type": "event"
+      },
+      "method_call": "CaseRegistered(uint256 indexed id, address indexed caseAddress)",
+      "method_id": "b134485a",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "12"
+        },
+        {
+          "indexed": true,
+          "name": "caseAddress",
+          "type": "address",
+          "value": "0x53FA618a8c2e504842F223D0077CC96694754c8c"
+        }
+      ]
+    },
+    "index": 92,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x53FA618a8c2e504842F223D0077CC96694754c8c",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0xb134485a23f5d8843534186de5acea21dcfa5d2e600a5c1041500f9a88022af0",
+      "0x000000000000000000000000000000000000000000000000000000000000000c",
+      "0x00000000000000000000000053fa618a8c2e504842f223d0077cc96694754c8c",
+      null
+    ],
+    "transaction_hash": "0x68617a41a70a97f7f2249be4839e9d450893e2518590a4d6420ac90524bab2c0"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x5c50c9b8c7396f5d5a2998df60a77c4be0a1e596666dd89a91c8cb652c71cf62",
+    "block_number": 38657162,
+    "block_timestamp": "2026-03-09T18:56:52.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000000000005",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint8",
+            "name": "verdict",
+            "type": "uint8"
+          }
+        ],
+        "name": "VerdictReceived",
+        "type": "event"
+      },
+      "method_call": "VerdictReceived(address indexed agreementAddress, uint8 verdict)",
+      "method_id": "7aaf3cff",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x2d14F1Ad43D90e8db1209A6cE3c1959c85b4D9e1"
+        },
+        {
+          "indexed": false,
+          "name": "verdict",
+          "type": "uint8",
+          "value": "5"
+        }
+      ]
+    },
+    "index": 4,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x8A3D588D9f6AC041476b094f97FF94ec30169d3D",
+      "implementations": [
+        {
+          "address_hash": "0x07F5127dDfc5Dd01F2709d3f37a50E0F6C01d797",
+          "name": "Executor"
+        }
+      ],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": "eip1967",
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x7aaf3cfffc49d49d2f7c35e764e856e6231ffd8455e8401579e2de8bc5f66b3a",
+      "0x0000000000000000000000002d14f1ad43d90e8db1209a6ce3c1959c85b4d9e1",
+      null,
+      null
+    ],
+    "transaction_hash": "0x050f5ecafa3fe77cc21114c1def7fbb139cd684430bc4145ed731ad6574ae997"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x301e432d78474366cf3273f16cc91225dac67c2a47fa25df39f826eb80c436be",
+    "block_number": 38656855,
+    "block_timestamp": "2026-03-09T18:46:38.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000069af158e",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "DisputeRequested",
+        "type": "event"
+      },
+      "method_call": "DisputeRequested(address indexed agreementAddress, uint256 timestamp)",
+      "method_id": "2e7497ec",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x2d14F1Ad43D90e8db1209A6cE3c1959c85b4D9e1"
+        },
+        {
+          "indexed": false,
+          "name": "timestamp",
+          "type": "uint256",
+          "value": "1773081998"
+        }
+      ]
+    },
+    "index": 186,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x2d14F1Ad43D90e8db1209A6cE3c1959c85b4D9e1",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x2e7497ecbb204909bb00265ac39d128e899a89d90d817e8a095375817e49c8f9",
+      "0x0000000000000000000000002d14f1ad43d90e8db1209a6ce3c1959c85b4d9e1",
+      null,
+      null
+    ],
+    "transaction_hash": "0x73369ee4eb6682b3cc0301f415a5f0b46b29260f735ae488cbd16a7fdfd1fa66"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x301e432d78474366cf3273f16cc91225dac67c2a47fa25df39f826eb80c436be",
+    "block_number": 38656855,
+    "block_timestamp": "2026-03-09T18:46:38.000000Z",
+    "data": "0x",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caseAddress",
+            "type": "address"
+          }
+        ],
+        "name": "CaseRegistered",
+        "type": "event"
+      },
+      "method_call": "CaseRegistered(uint256 indexed id, address indexed caseAddress)",
+      "method_id": "b134485a",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "11"
+        },
+        {
+          "indexed": true,
+          "name": "caseAddress",
+          "type": "address",
+          "value": "0x2d14F1Ad43D90e8db1209A6cE3c1959c85b4D9e1"
+        }
+      ]
+    },
+    "index": 185,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x2d14F1Ad43D90e8db1209A6cE3c1959c85b4D9e1",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0xb134485a23f5d8843534186de5acea21dcfa5d2e600a5c1041500f9a88022af0",
+      "0x000000000000000000000000000000000000000000000000000000000000000b",
+      "0x0000000000000000000000002d14f1ad43d90e8db1209a6ce3c1959c85b4d9e1",
+      null
+    ],
+    "transaction_hash": "0x73369ee4eb6682b3cc0301f415a5f0b46b29260f735ae488cbd16a7fdfd1fa66"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x20c2ae48660283c4b8b38b570f79e445a32490a7018512e0e19dce7f41420fde",
+    "block_number": 38655682,
+    "block_timestamp": "2026-03-09T18:07:32.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000000000006",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint8",
+            "name": "verdict",
+            "type": "uint8"
+          }
+        ],
+        "name": "VerdictReceived",
+        "type": "event"
+      },
+      "method_call": "VerdictReceived(address indexed agreementAddress, uint8 verdict)",
+      "method_id": "7aaf3cff",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x9bff14A32325eA103dd690E29Cd3F22660321b44"
+        },
+        {
+          "indexed": false,
+          "name": "verdict",
+          "type": "uint8",
+          "value": "6"
+        }
+      ]
+    },
+    "index": 3,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x8A3D588D9f6AC041476b094f97FF94ec30169d3D",
+      "implementations": [
+        {
+          "address_hash": "0x07F5127dDfc5Dd01F2709d3f37a50E0F6C01d797",
+          "name": "Executor"
+        }
+      ],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": "eip1967",
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x7aaf3cfffc49d49d2f7c35e764e856e6231ffd8455e8401579e2de8bc5f66b3a",
+      "0x0000000000000000000000009bff14a32325ea103dd690e29cd3f22660321b44",
+      null,
+      null
+    ],
+    "transaction_hash": "0x6e68df0ed613ba6c8f57ff32851120e710d954e6bc7d11ebd77885394b71e3ea"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x01dddc58c87ba0aedf9ec4c28df515355372bc6bf2721ad201878506438bc827",
+    "block_number": 38655400,
+    "block_timestamp": "2026-03-09T17:58:08.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000069af0a30",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "DisputeRequested",
+        "type": "event"
+      },
+      "method_call": "DisputeRequested(address indexed agreementAddress, uint256 timestamp)",
+      "method_id": "2e7497ec",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x9bff14A32325eA103dd690E29Cd3F22660321b44"
+        },
+        {
+          "indexed": false,
+          "name": "timestamp",
+          "type": "uint256",
+          "value": "1773079088"
+        }
+      ]
+    },
+    "index": 150,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x9bff14A32325eA103dd690E29Cd3F22660321b44",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x2e7497ecbb204909bb00265ac39d128e899a89d90d817e8a095375817e49c8f9",
+      "0x0000000000000000000000009bff14a32325ea103dd690e29cd3f22660321b44",
+      null,
+      null
+    ],
+    "transaction_hash": "0xf0c0d2f29d079e367dee4b8a9e60c3ade5a29078aabb320ef21629df381b401d"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x01dddc58c87ba0aedf9ec4c28df515355372bc6bf2721ad201878506438bc827",
+    "block_number": 38655400,
+    "block_timestamp": "2026-03-09T17:58:08.000000Z",
+    "data": "0x",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caseAddress",
+            "type": "address"
+          }
+        ],
+        "name": "CaseRegistered",
+        "type": "event"
+      },
+      "method_call": "CaseRegistered(uint256 indexed id, address indexed caseAddress)",
+      "method_id": "b134485a",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "10"
+        },
+        {
+          "indexed": true,
+          "name": "caseAddress",
+          "type": "address",
+          "value": "0x9bff14A32325eA103dd690E29Cd3F22660321b44"
+        }
+      ]
+    },
+    "index": 149,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x9bff14A32325eA103dd690E29Cd3F22660321b44",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0xb134485a23f5d8843534186de5acea21dcfa5d2e600a5c1041500f9a88022af0",
+      "0x000000000000000000000000000000000000000000000000000000000000000a",
+      "0x0000000000000000000000009bff14a32325ea103dd690e29cd3f22660321b44",
+      null
+    ],
+    "transaction_hash": "0xf0c0d2f29d079e367dee4b8a9e60c3ade5a29078aabb320ef21629df381b401d"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x117eaa1eaa38809a5215cc7a828cf93b514468eac73c49f73fb68b733804fa34",
+    "block_number": 38652122,
+    "block_timestamp": "2026-03-09T16:08:52.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000000000005",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint8",
+            "name": "verdict",
+            "type": "uint8"
+          }
+        ],
+        "name": "VerdictReceived",
+        "type": "event"
+      },
+      "method_call": "VerdictReceived(address indexed agreementAddress, uint8 verdict)",
+      "method_id": "7aaf3cff",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x87B5Afc78ca48D0EC62eEc7816884E0220c49978"
+        },
+        {
+          "indexed": false,
+          "name": "verdict",
+          "type": "uint8",
+          "value": "5"
+        }
+      ]
+    },
+    "index": 46,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x8A3D588D9f6AC041476b094f97FF94ec30169d3D",
+      "implementations": [
+        {
+          "address_hash": "0x07F5127dDfc5Dd01F2709d3f37a50E0F6C01d797",
+          "name": "Executor"
+        }
+      ],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": "eip1967",
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x7aaf3cfffc49d49d2f7c35e764e856e6231ffd8455e8401579e2de8bc5f66b3a",
+      "0x00000000000000000000000087b5afc78ca48d0ec62eec7816884e0220c49978",
+      null,
+      null
+    ],
+    "transaction_hash": "0x04d5874b4acf35a75c01c7101476ba560e1cd4e8accceb37d40565f5a35fee6f"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xef90ac4af029a5496a7a9e2f0077436c11f417faaeddffc86fd23d96d95a0e4f",
+    "block_number": 38651986,
+    "block_timestamp": "2026-03-09T16:04:20.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000000000004",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint8",
+            "name": "verdict",
+            "type": "uint8"
+          }
+        ],
+        "name": "VerdictReceived",
+        "type": "event"
+      },
+      "method_call": "VerdictReceived(address indexed agreementAddress, uint8 verdict)",
+      "method_id": "7aaf3cff",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x8edE7afc449CcA494fF3066aB020be143d784F91"
+        },
+        {
+          "indexed": false,
+          "name": "verdict",
+          "type": "uint8",
+          "value": "4"
+        }
+      ]
+    },
+    "index": 5,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x8A3D588D9f6AC041476b094f97FF94ec30169d3D",
+      "implementations": [
+        {
+          "address_hash": "0x07F5127dDfc5Dd01F2709d3f37a50E0F6C01d797",
+          "name": "Executor"
+        }
+      ],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": "eip1967",
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x7aaf3cfffc49d49d2f7c35e764e856e6231ffd8455e8401579e2de8bc5f66b3a",
+      "0x0000000000000000000000008ede7afc449cca494ff3066ab020be143d784f91",
+      null,
+      null
+    ],
+    "transaction_hash": "0xf9dcbc0ac3e5bd0263204cae573a303ceb4d9034bb4875d196141f5a33375780"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x26c068e28e4355d48e96aaea8be41d6b6bb5d85a63d523cb8cc7bcb95a504184",
+    "block_number": 38651961,
+    "block_timestamp": "2026-03-09T16:03:30.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000000000003",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint8",
+            "name": "verdict",
+            "type": "uint8"
+          }
+        ],
+        "name": "VerdictReceived",
+        "type": "event"
+      },
+      "method_call": "VerdictReceived(address indexed agreementAddress, uint8 verdict)",
+      "method_id": "7aaf3cff",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0xD42d18beA9c22e6c230B5EE116e9BCAC8757a6eC"
+        },
+        {
+          "indexed": false,
+          "name": "verdict",
+          "type": "uint8",
+          "value": "3"
+        }
+      ]
+    },
+    "index": 5,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x8A3D588D9f6AC041476b094f97FF94ec30169d3D",
+      "implementations": [
+        {
+          "address_hash": "0x07F5127dDfc5Dd01F2709d3f37a50E0F6C01d797",
+          "name": "Executor"
+        }
+      ],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": "eip1967",
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x7aaf3cfffc49d49d2f7c35e764e856e6231ffd8455e8401579e2de8bc5f66b3a",
+      "0x000000000000000000000000d42d18bea9c22e6c230b5ee116e9bcac8757a6ec",
+      null,
+      null
+    ],
+    "transaction_hash": "0x591ddfce47cd4a9198e9a8f4d8db5bca6dec1ea39e3cf1ba346a5aa092fb9220"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xd85c163bd47a8d7edd60e31204a7735208c372e6b8ea7cd605771bf3938530f8",
+    "block_number": 38651875,
+    "block_timestamp": "2026-03-09T16:00:38.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000000000002",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint8",
+            "name": "verdict",
+            "type": "uint8"
+          }
+        ],
+        "name": "VerdictReceived",
+        "type": "event"
+      },
+      "method_call": "VerdictReceived(address indexed agreementAddress, uint8 verdict)",
+      "method_id": "7aaf3cff",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x08FB300E1290Fa3e12cdeD8B2Bf050Edd46fFf73"
+        },
+        {
+          "indexed": false,
+          "name": "verdict",
+          "type": "uint8",
+          "value": "2"
+        }
+      ]
+    },
+    "index": 178,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x8A3D588D9f6AC041476b094f97FF94ec30169d3D",
+      "implementations": [
+        {
+          "address_hash": "0x07F5127dDfc5Dd01F2709d3f37a50E0F6C01d797",
+          "name": "Executor"
+        }
+      ],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": "eip1967",
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x7aaf3cfffc49d49d2f7c35e764e856e6231ffd8455e8401579e2de8bc5f66b3a",
+      "0x00000000000000000000000008fb300e1290fa3e12cded8b2bf050edd46fff73",
+      null,
+      null
+    ],
+    "transaction_hash": "0x3d3b0f365c7db6b1b060b985f1ed7c25d71dcc4ac1b2624fb95d8fa1254421b5"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x5003d61713a0e5c1a475ce8f7412201e0f4821accacfa55ed5b9dfa7edc51db5",
+    "block_number": 38650454,
+    "block_timestamp": "2026-03-09T15:13:16.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000069aee38c",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "DisputeRequested",
+        "type": "event"
+      },
+      "method_call": "DisputeRequested(address indexed agreementAddress, uint256 timestamp)",
+      "method_id": "2e7497ec",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x87B5Afc78ca48D0EC62eEc7816884E0220c49978"
+        },
+        {
+          "indexed": false,
+          "name": "timestamp",
+          "type": "uint256",
+          "value": "1773069196"
+        }
+      ]
+    },
+    "index": 116,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x87B5Afc78ca48D0EC62eEc7816884E0220c49978",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x2e7497ecbb204909bb00265ac39d128e899a89d90d817e8a095375817e49c8f9",
+      "0x00000000000000000000000087b5afc78ca48d0ec62eec7816884e0220c49978",
+      null,
+      null
+    ],
+    "transaction_hash": "0xd1bd8dbf48f980613e6b3d21d11d1d14b70a5d4817f263c6082c427fe8e04bcc"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x5003d61713a0e5c1a475ce8f7412201e0f4821accacfa55ed5b9dfa7edc51db5",
+    "block_number": 38650454,
+    "block_timestamp": "2026-03-09T15:13:16.000000Z",
+    "data": "0x",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caseAddress",
+            "type": "address"
+          }
+        ],
+        "name": "CaseRegistered",
+        "type": "event"
+      },
+      "method_call": "CaseRegistered(uint256 indexed id, address indexed caseAddress)",
+      "method_id": "b134485a",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "9"
+        },
+        {
+          "indexed": true,
+          "name": "caseAddress",
+          "type": "address",
+          "value": "0x87B5Afc78ca48D0EC62eEc7816884E0220c49978"
+        }
+      ]
+    },
+    "index": 115,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x87B5Afc78ca48D0EC62eEc7816884E0220c49978",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0xb134485a23f5d8843534186de5acea21dcfa5d2e600a5c1041500f9a88022af0",
+      "0x0000000000000000000000000000000000000000000000000000000000000009",
+      "0x00000000000000000000000087b5afc78ca48d0ec62eec7816884e0220c49978",
+      null
+    ],
+    "transaction_hash": "0xd1bd8dbf48f980613e6b3d21d11d1d14b70a5d4817f263c6082c427fe8e04bcc"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xd6e4233122c15220f93288b1bc0447f17b7d3634657a34c130c3b8487520053d",
+    "block_number": 38650431,
+    "block_timestamp": "2026-03-09T15:12:30.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000069aee35e",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "DisputeRequested",
+        "type": "event"
+      },
+      "method_call": "DisputeRequested(address indexed agreementAddress, uint256 timestamp)",
+      "method_id": "2e7497ec",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x8edE7afc449CcA494fF3066aB020be143d784F91"
+        },
+        {
+          "indexed": false,
+          "name": "timestamp",
+          "type": "uint256",
+          "value": "1773069150"
+        }
+      ]
+    },
+    "index": 3,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x8edE7afc449CcA494fF3066aB020be143d784F91",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x2e7497ecbb204909bb00265ac39d128e899a89d90d817e8a095375817e49c8f9",
+      "0x0000000000000000000000008ede7afc449cca494ff3066ab020be143d784f91",
+      null,
+      null
+    ],
+    "transaction_hash": "0x54cf1571449f46a50c0aaf80b51c1205a8a13ef3fc0582a9f52f07ff77027e42"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xd6e4233122c15220f93288b1bc0447f17b7d3634657a34c130c3b8487520053d",
+    "block_number": 38650431,
+    "block_timestamp": "2026-03-09T15:12:30.000000Z",
+    "data": "0x",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caseAddress",
+            "type": "address"
+          }
+        ],
+        "name": "CaseRegistered",
+        "type": "event"
+      },
+      "method_call": "CaseRegistered(uint256 indexed id, address indexed caseAddress)",
+      "method_id": "b134485a",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "8"
+        },
+        {
+          "indexed": true,
+          "name": "caseAddress",
+          "type": "address",
+          "value": "0x8edE7afc449CcA494fF3066aB020be143d784F91"
+        }
+      ]
+    },
+    "index": 2,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x8edE7afc449CcA494fF3066aB020be143d784F91",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0xb134485a23f5d8843534186de5acea21dcfa5d2e600a5c1041500f9a88022af0",
+      "0x0000000000000000000000000000000000000000000000000000000000000008",
+      "0x0000000000000000000000008ede7afc449cca494ff3066ab020be143d784f91",
+      null
+    ],
+    "transaction_hash": "0x54cf1571449f46a50c0aaf80b51c1205a8a13ef3fc0582a9f52f07ff77027e42"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x4c8c5ba5682937c3f5b4f12cd37a7beb1669c3a0efb6feb1dff0aa138d0a9611",
+    "block_number": 38650407,
+    "block_timestamp": "2026-03-09T15:11:42.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000069aee32e",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "DisputeRequested",
+        "type": "event"
+      },
+      "method_call": "DisputeRequested(address indexed agreementAddress, uint256 timestamp)",
+      "method_id": "2e7497ec",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0xD42d18beA9c22e6c230B5EE116e9BCAC8757a6eC"
+        },
+        {
+          "indexed": false,
+          "name": "timestamp",
+          "type": "uint256",
+          "value": "1773069102"
+        }
+      ]
+    },
+    "index": 214,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xD42d18beA9c22e6c230B5EE116e9BCAC8757a6eC",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x2e7497ecbb204909bb00265ac39d128e899a89d90d817e8a095375817e49c8f9",
+      "0x000000000000000000000000d42d18bea9c22e6c230b5ee116e9bcac8757a6ec",
+      null,
+      null
+    ],
+    "transaction_hash": "0x2ed8a817e76d0e0aba68a362c6847b6ec3f4ec99b903794082afbde36533d76e"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x4c8c5ba5682937c3f5b4f12cd37a7beb1669c3a0efb6feb1dff0aa138d0a9611",
+    "block_number": 38650407,
+    "block_timestamp": "2026-03-09T15:11:42.000000Z",
+    "data": "0x",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caseAddress",
+            "type": "address"
+          }
+        ],
+        "name": "CaseRegistered",
+        "type": "event"
+      },
+      "method_call": "CaseRegistered(uint256 indexed id, address indexed caseAddress)",
+      "method_id": "b134485a",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "7"
+        },
+        {
+          "indexed": true,
+          "name": "caseAddress",
+          "type": "address",
+          "value": "0xD42d18beA9c22e6c230B5EE116e9BCAC8757a6eC"
+        }
+      ]
+    },
+    "index": 213,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xD42d18beA9c22e6c230B5EE116e9BCAC8757a6eC",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0xb134485a23f5d8843534186de5acea21dcfa5d2e600a5c1041500f9a88022af0",
+      "0x0000000000000000000000000000000000000000000000000000000000000007",
+      "0x000000000000000000000000d42d18bea9c22e6c230b5ee116e9bcac8757a6ec",
+      null
+    ],
+    "transaction_hash": "0x2ed8a817e76d0e0aba68a362c6847b6ec3f4ec99b903794082afbde36533d76e"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x5338a059d29cf2d7970ba6d759ce1b0352ae126060cbce2ea35df82c6219ca68",
+    "block_number": 38650385,
+    "block_timestamp": "2026-03-09T15:10:58.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000069aee302",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "DisputeRequested",
+        "type": "event"
+      },
+      "method_call": "DisputeRequested(address indexed agreementAddress, uint256 timestamp)",
+      "method_id": "2e7497ec",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x08FB300E1290Fa3e12cdeD8B2Bf050Edd46fFf73"
+        },
+        {
+          "indexed": false,
+          "name": "timestamp",
+          "type": "uint256",
+          "value": "1773069058"
+        }
+      ]
+    },
+    "index": 44,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x08FB300E1290Fa3e12cdeD8B2Bf050Edd46fFf73",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x2e7497ecbb204909bb00265ac39d128e899a89d90d817e8a095375817e49c8f9",
+      "0x00000000000000000000000008fb300e1290fa3e12cded8b2bf050edd46fff73",
+      null,
+      null
+    ],
+    "transaction_hash": "0x0f923f5f4ec87f375403efd864b2a8e5f1ca519124bdb6a35c721a4cd632b175"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x5338a059d29cf2d7970ba6d759ce1b0352ae126060cbce2ea35df82c6219ca68",
+    "block_number": 38650385,
+    "block_timestamp": "2026-03-09T15:10:58.000000Z",
+    "data": "0x",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caseAddress",
+            "type": "address"
+          }
+        ],
+        "name": "CaseRegistered",
+        "type": "event"
+      },
+      "method_call": "CaseRegistered(uint256 indexed id, address indexed caseAddress)",
+      "method_id": "b134485a",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "6"
+        },
+        {
+          "indexed": true,
+          "name": "caseAddress",
+          "type": "address",
+          "value": "0x08FB300E1290Fa3e12cdeD8B2Bf050Edd46fFf73"
+        }
+      ]
+    },
+    "index": 43,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x08FB300E1290Fa3e12cdeD8B2Bf050Edd46fFf73",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0xb134485a23f5d8843534186de5acea21dcfa5d2e600a5c1041500f9a88022af0",
+      "0x0000000000000000000000000000000000000000000000000000000000000006",
+      "0x00000000000000000000000008fb300e1290fa3e12cded8b2bf050edd46fff73",
+      null
+    ],
+    "transaction_hash": "0x0f923f5f4ec87f375403efd864b2a8e5f1ca519124bdb6a35c721a4cd632b175"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x5d3703031289b950e4e60b8085db788a85ae02dd1516e7a73cbc038b39c2912e",
+    "block_number": 38578785,
+    "block_timestamp": "2026-03-07T23:24:18.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000000000003",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint8",
+            "name": "verdict",
+            "type": "uint8"
+          }
+        ],
+        "name": "VerdictReceived",
+        "type": "event"
+      },
+      "method_call": "VerdictReceived(address indexed agreementAddress, uint8 verdict)",
+      "method_id": "7aaf3cff",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0xe50A8F382B3B751dBd7053963EbaBB59916f3788"
+        },
+        {
+          "indexed": false,
+          "name": "verdict",
+          "type": "uint8",
+          "value": "3"
+        }
+      ]
+    },
+    "index": 101,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x8A3D588D9f6AC041476b094f97FF94ec30169d3D",
+      "implementations": [
+        {
+          "address_hash": "0x07F5127dDfc5Dd01F2709d3f37a50E0F6C01d797",
+          "name": "Executor"
+        }
+      ],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": "eip1967",
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x7aaf3cfffc49d49d2f7c35e764e856e6231ffd8455e8401579e2de8bc5f66b3a",
+      "0x000000000000000000000000e50a8f382b3b751dbd7053963ebabb59916f3788",
+      null,
+      null
+    ],
+    "transaction_hash": "0x5b70ac102e29e15e22337fea6506cccfaf22c7fc85b853e094fedaecba3e5053"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xc77d24ee4b5d46daa158f6b153240ae130f440882e6886131aaf6116d4135676",
+    "block_number": 38578324,
+    "block_timestamp": "2026-03-07T23:08:56.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000000000002",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint8",
+            "name": "verdict",
+            "type": "uint8"
+          }
+        ],
+        "name": "VerdictReceived",
+        "type": "event"
+      },
+      "method_call": "VerdictReceived(address indexed agreementAddress, uint8 verdict)",
+      "method_id": "7aaf3cff",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0xbd0dB046A913817522B595CFEb922D5E2aad4268"
+        },
+        {
+          "indexed": false,
+          "name": "verdict",
+          "type": "uint8",
+          "value": "2"
+        }
+      ]
+    },
+    "index": 36,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x8A3D588D9f6AC041476b094f97FF94ec30169d3D",
+      "implementations": [
+        {
+          "address_hash": "0x07F5127dDfc5Dd01F2709d3f37a50E0F6C01d797",
+          "name": "Executor"
+        }
+      ],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": "eip1967",
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x7aaf3cfffc49d49d2f7c35e764e856e6231ffd8455e8401579e2de8bc5f66b3a",
+      "0x000000000000000000000000bd0db046a913817522b595cfeb922d5e2aad4268",
+      null,
+      null
+    ],
+    "transaction_hash": "0x6dbf8870c8dfb02a6f4c5664913f138dfe93a4286c43c348c764caa2738b94c3"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x274da25b6f7ffb21e1898966704e9d83fde229483c2a835f7fa1e9b930b49675",
+    "block_number": 38578228,
+    "block_timestamp": "2026-03-07T23:05:44.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint8",
+            "name": "verdict",
+            "type": "uint8"
+          }
+        ],
+        "name": "VerdictReceived",
+        "type": "event"
+      },
+      "method_call": "VerdictReceived(address indexed agreementAddress, uint8 verdict)",
+      "method_id": "7aaf3cff",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0xb4700D67d6cBeF18011021A2A20389ea88753234"
+        },
+        {
+          "indexed": false,
+          "name": "verdict",
+          "type": "uint8",
+          "value": "1"
+        }
+      ]
+    },
+    "index": 13,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x8A3D588D9f6AC041476b094f97FF94ec30169d3D",
+      "implementations": [
+        {
+          "address_hash": "0x07F5127dDfc5Dd01F2709d3f37a50E0F6C01d797",
+          "name": "Executor"
+        }
+      ],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": "eip1967",
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x7aaf3cfffc49d49d2f7c35e764e856e6231ffd8455e8401579e2de8bc5f66b3a",
+      "0x000000000000000000000000b4700d67d6cbef18011021a2a20389ea88753234",
+      null,
+      null
+    ],
+    "transaction_hash": "0x95f8f27ed0af49a35300568796e0cfc28943a6a483018689dc0ec67fa0b7cc88"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xcbf77a02fd03c4680546ca0f646891500a82f5e70704031cff087ff2ccdaa6f6",
+    "block_number": 38578134,
+    "block_timestamp": "2026-03-07T23:02:36.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000069acae8c",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "DisputeRequested",
+        "type": "event"
+      },
+      "method_call": "DisputeRequested(address indexed agreementAddress, uint256 timestamp)",
+      "method_id": "2e7497ec",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0xe50A8F382B3B751dBd7053963EbaBB59916f3788"
+        },
+        {
+          "indexed": false,
+          "name": "timestamp",
+          "type": "uint256",
+          "value": "1772924556"
+        }
+      ]
+    },
+    "index": 2,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xe50A8F382B3B751dBd7053963EbaBB59916f3788",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x2e7497ecbb204909bb00265ac39d128e899a89d90d817e8a095375817e49c8f9",
+      "0x000000000000000000000000e50a8f382b3b751dbd7053963ebabb59916f3788",
+      null,
+      null
+    ],
+    "transaction_hash": "0xc9d93c813a336e24e7e484503ec1e02c64038ecb4dc6f1d953e476d0702ba68e"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xcbf77a02fd03c4680546ca0f646891500a82f5e70704031cff087ff2ccdaa6f6",
+    "block_number": 38578134,
+    "block_timestamp": "2026-03-07T23:02:36.000000Z",
+    "data": "0x",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caseAddress",
+            "type": "address"
+          }
+        ],
+        "name": "CaseRegistered",
+        "type": "event"
+      },
+      "method_call": "CaseRegistered(uint256 indexed id, address indexed caseAddress)",
+      "method_id": "b134485a",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "5"
+        },
+        {
+          "indexed": true,
+          "name": "caseAddress",
+          "type": "address",
+          "value": "0xe50A8F382B3B751dBd7053963EbaBB59916f3788"
+        }
+      ]
+    },
+    "index": 1,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xe50A8F382B3B751dBd7053963EbaBB59916f3788",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0xb134485a23f5d8843534186de5acea21dcfa5d2e600a5c1041500f9a88022af0",
+      "0x0000000000000000000000000000000000000000000000000000000000000005",
+      "0x000000000000000000000000e50a8f382b3b751dbd7053963ebabb59916f3788",
+      null
+    ],
+    "transaction_hash": "0xc9d93c813a336e24e7e484503ec1e02c64038ecb4dc6f1d953e476d0702ba68e"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xac46592585977a755d3d3a1e76cc31cda85a5e53fae40ec170a59f09a0578e63",
+    "block_number": 38578112,
+    "block_timestamp": "2026-03-07T23:01:52.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000069acae60",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "DisputeRequested",
+        "type": "event"
+      },
+      "method_call": "DisputeRequested(address indexed agreementAddress, uint256 timestamp)",
+      "method_id": "2e7497ec",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0xbd0dB046A913817522B595CFEb922D5E2aad4268"
+        },
+        {
+          "indexed": false,
+          "name": "timestamp",
+          "type": "uint256",
+          "value": "1772924512"
+        }
+      ]
+    },
+    "index": 183,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xbd0dB046A913817522B595CFEb922D5E2aad4268",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x2e7497ecbb204909bb00265ac39d128e899a89d90d817e8a095375817e49c8f9",
+      "0x000000000000000000000000bd0db046a913817522b595cfeb922d5e2aad4268",
+      null,
+      null
+    ],
+    "transaction_hash": "0x57cb5fa07a798e8faf0c73ce183c02c4ff97a4a0ba329c3a194c475a66c6b879"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xac46592585977a755d3d3a1e76cc31cda85a5e53fae40ec170a59f09a0578e63",
+    "block_number": 38578112,
+    "block_timestamp": "2026-03-07T23:01:52.000000Z",
+    "data": "0x",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caseAddress",
+            "type": "address"
+          }
+        ],
+        "name": "CaseRegistered",
+        "type": "event"
+      },
+      "method_call": "CaseRegistered(uint256 indexed id, address indexed caseAddress)",
+      "method_id": "b134485a",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "4"
+        },
+        {
+          "indexed": true,
+          "name": "caseAddress",
+          "type": "address",
+          "value": "0xbd0dB046A913817522B595CFEb922D5E2aad4268"
+        }
+      ]
+    },
+    "index": 182,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xbd0dB046A913817522B595CFEb922D5E2aad4268",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0xb134485a23f5d8843534186de5acea21dcfa5d2e600a5c1041500f9a88022af0",
+      "0x0000000000000000000000000000000000000000000000000000000000000004",
+      "0x000000000000000000000000bd0db046a913817522b595cfeb922d5e2aad4268",
+      null
+    ],
+    "transaction_hash": "0x57cb5fa07a798e8faf0c73ce183c02c4ff97a4a0ba329c3a194c475a66c6b879"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xb9cab0e0e0354e524ec539df4f97ca865cebaeb3e374cae52e711e654f9b4748",
+    "block_number": 38578090,
+    "block_timestamp": "2026-03-07T23:01:08.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000069acae34",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "DisputeRequested",
+        "type": "event"
+      },
+      "method_call": "DisputeRequested(address indexed agreementAddress, uint256 timestamp)",
+      "method_id": "2e7497ec",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0xb4700D67d6cBeF18011021A2A20389ea88753234"
+        },
+        {
+          "indexed": false,
+          "name": "timestamp",
+          "type": "uint256",
+          "value": "1772924468"
+        }
+      ]
+    },
+    "index": 56,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xb4700D67d6cBeF18011021A2A20389ea88753234",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x2e7497ecbb204909bb00265ac39d128e899a89d90d817e8a095375817e49c8f9",
+      "0x000000000000000000000000b4700d67d6cbef18011021a2a20389ea88753234",
+      null,
+      null
+    ],
+    "transaction_hash": "0x7c02ae194c6a29a1b63fddcad70ebbad5d962faaa32dfa2725df7df14f93ac52"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xb9cab0e0e0354e524ec539df4f97ca865cebaeb3e374cae52e711e654f9b4748",
+    "block_number": 38578090,
+    "block_timestamp": "2026-03-07T23:01:08.000000Z",
+    "data": "0x",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caseAddress",
+            "type": "address"
+          }
+        ],
+        "name": "CaseRegistered",
+        "type": "event"
+      },
+      "method_call": "CaseRegistered(uint256 indexed id, address indexed caseAddress)",
+      "method_id": "b134485a",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "3"
+        },
+        {
+          "indexed": true,
+          "name": "caseAddress",
+          "type": "address",
+          "value": "0xb4700D67d6cBeF18011021A2A20389ea88753234"
+        }
+      ]
+    },
+    "index": 55,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xb4700D67d6cBeF18011021A2A20389ea88753234",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0xb134485a23f5d8843534186de5acea21dcfa5d2e600a5c1041500f9a88022af0",
+      "0x0000000000000000000000000000000000000000000000000000000000000003",
+      "0x000000000000000000000000b4700d67d6cbef18011021a2a20389ea88753234",
+      null
+    ],
+    "transaction_hash": "0x7c02ae194c6a29a1b63fddcad70ebbad5d962faaa32dfa2725df7df14f93ac52"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x6f67d05d7440010170f66932f3267c6bbf6c37e206bd6977226f98c59244ed18",
+    "block_number": 38577282,
+    "block_timestamp": "2026-03-07T22:34:12.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000000000003",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint8",
+            "name": "verdict",
+            "type": "uint8"
+          }
+        ],
+        "name": "VerdictReceived",
+        "type": "event"
+      },
+      "method_call": "VerdictReceived(address indexed agreementAddress, uint8 verdict)",
+      "method_id": "7aaf3cff",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x43FCbF7fa4A1c8d6Ca648FaD163636b20BceE233"
+        },
+        {
+          "indexed": false,
+          "name": "verdict",
+          "type": "uint8",
+          "value": "3"
+        }
+      ]
+    },
+    "index": 233,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x8A3D588D9f6AC041476b094f97FF94ec30169d3D",
+      "implementations": [
+        {
+          "address_hash": "0x07F5127dDfc5Dd01F2709d3f37a50E0F6C01d797",
+          "name": "Executor"
+        }
+      ],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": "eip1967",
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x7aaf3cfffc49d49d2f7c35e764e856e6231ffd8455e8401579e2de8bc5f66b3a",
+      "0x00000000000000000000000043fcbf7fa4a1c8d6ca648fad163636b20bcee233",
+      null,
+      null
+    ],
+    "transaction_hash": "0xd5d6062528af73bf21d338dc90d8a26840ceaad8cfe9198b106cd5eb59916bb2"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x0506d753fcd8c8f863bcafecc6f59f3856578103b6de17c5f20a2014e522f428",
+    "block_number": 38577136,
+    "block_timestamp": "2026-03-07T22:29:20.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000000000002",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint8",
+            "name": "verdict",
+            "type": "uint8"
+          }
+        ],
+        "name": "VerdictReceived",
+        "type": "event"
+      },
+      "method_call": "VerdictReceived(address indexed agreementAddress, uint8 verdict)",
+      "method_id": "7aaf3cff",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0xab772bb1D873ed851B6f1150100f085b36A1ca02"
+        },
+        {
+          "indexed": false,
+          "name": "verdict",
+          "type": "uint8",
+          "value": "2"
+        }
+      ]
+    },
+    "index": 57,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x8A3D588D9f6AC041476b094f97FF94ec30169d3D",
+      "implementations": [
+        {
+          "address_hash": "0x07F5127dDfc5Dd01F2709d3f37a50E0F6C01d797",
+          "name": "Executor"
+        }
+      ],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": "eip1967",
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x7aaf3cfffc49d49d2f7c35e764e856e6231ffd8455e8401579e2de8bc5f66b3a",
+      "0x000000000000000000000000ab772bb1d873ed851b6f1150100f085b36a1ca02",
+      null,
+      null
+    ],
+    "transaction_hash": "0x9ed8459110f47f54d68070da63142b67a09ea3477440b59d8c55e0250fc4c03b"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x78ed4a0b9009f995bddaf882b6fd38f5a663059ea25d51d7323107b89523aaaf",
+    "block_number": 38577126,
+    "block_timestamp": "2026-03-07T22:29:00.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000000000003",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint8",
+            "name": "verdict",
+            "type": "uint8"
+          }
+        ],
+        "name": "VerdictReceived",
+        "type": "event"
+      },
+      "method_call": "VerdictReceived(address indexed agreementAddress, uint8 verdict)",
+      "method_id": "7aaf3cff",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x778E3528940849432619142a8D7aC172486353bF"
+        },
+        {
+          "indexed": false,
+          "name": "verdict",
+          "type": "uint8",
+          "value": "3"
+        }
+      ]
+    },
+    "index": 3,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x8A3D588D9f6AC041476b094f97FF94ec30169d3D",
+      "implementations": [
+        {
+          "address_hash": "0x07F5127dDfc5Dd01F2709d3f37a50E0F6C01d797",
+          "name": "Executor"
+        }
+      ],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": "eip1967",
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x7aaf3cfffc49d49d2f7c35e764e856e6231ffd8455e8401579e2de8bc5f66b3a",
+      "0x000000000000000000000000778e3528940849432619142a8d7ac172486353bf",
+      null,
+      null
+    ],
+    "transaction_hash": "0xb978ddfe9262490ae9199b3c172011b293dcae3abda98bd2ed73ab083b9c4267"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x1e95ef9b4dbc753230ea78b1648dc37e027f908cfd7987b092a16f4856a86821",
+    "block_number": 38576387,
+    "block_timestamp": "2026-03-07T22:04:22.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000069aca0e6",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "DisputeRequested",
+        "type": "event"
+      },
+      "method_call": "DisputeRequested(address indexed agreementAddress, uint256 timestamp)",
+      "method_id": "2e7497ec",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x43FCbF7fa4A1c8d6Ca648FaD163636b20BceE233"
+        },
+        {
+          "indexed": false,
+          "name": "timestamp",
+          "type": "uint256",
+          "value": "1772921062"
+        }
+      ]
+    },
+    "index": 172,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x43FCbF7fa4A1c8d6Ca648FaD163636b20BceE233",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x2e7497ecbb204909bb00265ac39d128e899a89d90d817e8a095375817e49c8f9",
+      "0x00000000000000000000000043fcbf7fa4a1c8d6ca648fad163636b20bcee233",
+      null,
+      null
+    ],
+    "transaction_hash": "0x73e95665617e50aff2eebacf800f380a7f16a135d355b162c575fd79ad9da939"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x1e95ef9b4dbc753230ea78b1648dc37e027f908cfd7987b092a16f4856a86821",
+    "block_number": 38576387,
+    "block_timestamp": "2026-03-07T22:04:22.000000Z",
+    "data": "0x",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caseAddress",
+            "type": "address"
+          }
+        ],
+        "name": "CaseRegistered",
+        "type": "event"
+      },
+      "method_call": "CaseRegistered(uint256 indexed id, address indexed caseAddress)",
+      "method_id": "b134485a",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "2"
+        },
+        {
+          "indexed": true,
+          "name": "caseAddress",
+          "type": "address",
+          "value": "0x43FCbF7fa4A1c8d6Ca648FaD163636b20BceE233"
+        }
+      ]
+    },
+    "index": 171,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x43FCbF7fa4A1c8d6Ca648FaD163636b20BceE233",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": false,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0xb134485a23f5d8843534186de5acea21dcfa5d2e600a5c1041500f9a88022af0",
+      "0x0000000000000000000000000000000000000000000000000000000000000002",
+      "0x00000000000000000000000043fcbf7fa4a1c8d6ca648fad163636b20bcee233",
+      null
+    ],
+    "transaction_hash": "0x73e95665617e50aff2eebacf800f380a7f16a135d355b162c575fd79ad9da939"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xa39e95f8519a0ab600f16ebb5eaa20e24724e56a4579c0fee5d0caf2b9a0d74e",
+    "block_number": 38576364,
+    "block_timestamp": "2026-03-07T22:03:36.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000069aca0b8",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "DisputeRequested",
+        "type": "event"
+      },
+      "method_call": "DisputeRequested(address indexed agreementAddress, uint256 timestamp)",
+      "method_id": "2e7497ec",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0xab772bb1D873ed851B6f1150100f085b36A1ca02"
+        },
+        {
+          "indexed": false,
+          "name": "timestamp",
+          "type": "uint256",
+          "value": "1772921016"
+        }
+      ]
+    },
+    "index": 194,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xab772bb1D873ed851B6f1150100f085b36A1ca02",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x2e7497ecbb204909bb00265ac39d128e899a89d90d817e8a095375817e49c8f9",
+      "0x000000000000000000000000ab772bb1d873ed851b6f1150100f085b36a1ca02",
+      null,
+      null
+    ],
+    "transaction_hash": "0xc6c21de681a2307a77cac22cb0f64a9d8c581ca6abc8a4f69dd9aaa47a5b4ce4"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0xa39e95f8519a0ab600f16ebb5eaa20e24724e56a4579c0fee5d0caf2b9a0d74e",
+    "block_number": 38576364,
+    "block_timestamp": "2026-03-07T22:03:36.000000Z",
+    "data": "0x",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caseAddress",
+            "type": "address"
+          }
+        ],
+        "name": "CaseRegistered",
+        "type": "event"
+      },
+      "method_call": "CaseRegistered(uint256 indexed id, address indexed caseAddress)",
+      "method_id": "b134485a",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "1"
+        },
+        {
+          "indexed": true,
+          "name": "caseAddress",
+          "type": "address",
+          "value": "0xab772bb1D873ed851B6f1150100f085b36A1ca02"
+        }
+      ]
+    },
+    "index": 193,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0xab772bb1D873ed851B6f1150100f085b36A1ca02",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0xb134485a23f5d8843534186de5acea21dcfa5d2e600a5c1041500f9a88022af0",
+      "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "0x000000000000000000000000ab772bb1d873ed851b6f1150100f085b36a1ca02",
+      null
+    ],
+    "transaction_hash": "0xc6c21de681a2307a77cac22cb0f64a9d8c581ca6abc8a4f69dd9aaa47a5b4ce4"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x8689c4c0dafe73526b3daa993efae681b3e572c32e53a33069e1af41939b8d06",
+    "block_number": 38576342,
+    "block_timestamp": "2026-03-07T22:02:52.000000Z",
+    "data": "0x0000000000000000000000000000000000000000000000000000000069aca08c",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "agreementAddress",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "DisputeRequested",
+        "type": "event"
+      },
+      "method_call": "DisputeRequested(address indexed agreementAddress, uint256 timestamp)",
+      "method_id": "2e7497ec",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "agreementAddress",
+          "type": "address",
+          "value": "0x778E3528940849432619142a8D7aC172486353bF"
+        },
+        {
+          "indexed": false,
+          "name": "timestamp",
+          "type": "uint256",
+          "value": "1772920972"
+        }
+      ]
+    },
+    "index": 115,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x778E3528940849432619142a8D7aC172486353bF",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0x2e7497ecbb204909bb00265ac39d128e899a89d90d817e8a095375817e49c8f9",
+      "0x000000000000000000000000778e3528940849432619142a8d7ac172486353bf",
+      null,
+      null
+    ],
+    "transaction_hash": "0x499ec388fb0d939bec30cfa400b0b80df1b978145cb82e47a1d4628e160dfa66"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x8689c4c0dafe73526b3daa993efae681b3e572c32e53a33069e1af41939b8d06",
+    "block_number": 38576342,
+    "block_timestamp": "2026-03-07T22:02:52.000000Z",
+    "data": "0x",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "caseAddress",
+            "type": "address"
+          }
+        ],
+        "name": "CaseRegistered",
+        "type": "event"
+      },
+      "method_call": "CaseRegistered(uint256 indexed id, address indexed caseAddress)",
+      "method_id": "b134485a",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256",
+          "value": "0"
+        },
+        {
+          "indexed": true,
+          "name": "caseAddress",
+          "type": "address",
+          "value": "0x778E3528940849432619142a8D7aC172486353bF"
+        }
+      ]
+    },
+    "index": 114,
+    "smart_contract": {
+      "ens_domain_name": null,
+      "hash": "0x778E3528940849432619142a8D7aC172486353bF",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": null,
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "topics": [
+      "0xb134485a23f5d8843534186de5acea21dcfa5d2e600a5c1041500f9a88022af0",
+      "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "0x000000000000000000000000778e3528940849432619142a8d7ac172486353bf",
+      null
+    ],
+    "transaction_hash": "0x499ec388fb0d939bec30cfa400b0b80df1b978145cb82e47a1d4628e160dfa66"
+  },
+  {
+    "address": {
+      "ens_domain_name": null,
+      "hash": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+      "implementations": [],
+      "is_contract": true,
+      "is_scam": false,
+      "is_verified": true,
+      "metadata": null,
+      "name": "InternetCourtFactory",
+      "private_tags": [],
+      "proxy_type": null,
+      "public_tags": [],
+      "reputation": "ok",
+      "watchlist_names": []
+    },
+    "block_hash": "0x6160e8bc0f793bfbe31e4f4da777f8635c1c836008ab94de67a01044aed2b9ee",
+    "block_number": 38576182,
+    "block_timestamp": "2026-03-07T21:57:32.000000Z",
+    "data": "0x",
+    "decoded": {
+      "abi": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "previousOwner",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+          }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event"
+      },
+      "method_call": "OwnershipTransferred(address indexed previousOwner, address indexed newOwner)",
+      "method_id": "8be0079c",
+      "parameters": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address",
+          "value": "0x0000000000000000000000000000000000000000"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address",
+          "value": "0xe9630ba0e3cc2d3BFC58fbE1Bbde478f06E4CE87"
+        }
+      ]
+    },
+    "index": 210,
+    "smart_contract": null,
+    "topics": [
+      "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+      "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "0x000000000000000000000000e9630ba0e3cc2d3bfc58fbe1bbde478f06e4ce87",
+      null
+    ],
+    "transaction_hash": "0x27d642765d4b2814326ab8fdff8408897f9fad24a776f8c3290ef9d613d146aa"
+  }
+]

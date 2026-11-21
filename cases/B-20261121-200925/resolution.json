@@ -1,0 +1,18 @@
+{
+  "status": "RESOLVED",
+  "verdict": "TRUE_",
+  "reasoning": "Resolved by default - only dispute initiator submitted evidence",
+  "genlayerVerdict": "TRUE",
+  "match": true,
+  "claimTx": "0xbb0e6e79ef08dfa92b8da183430401cb95a56453f41e7a8321187835a22a2ff3",
+  "balancesBefore": {
+    "USER": "90",
+    "AGENT": "5",
+    "escrow": "5"
+  },
+  "balancesAfter": {
+    "USER": "95",
+    "AGENT": "5",
+    "escrow": "0"
+  }
+}

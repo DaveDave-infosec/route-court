@@ -1,0 +1,31 @@
+{
+  "agreement": "0x8434312A8A8A048897Bb59Da57838AD1cafcBEF3",
+  "id": 21,
+  "createTx": "0x84dbf36c4c8633b0184e715c2148f6a5c6709a83b277ca3f379205bc90bba7b4",
+  "terms": {
+    "escrowUSDC": "5",
+    "evidenceDeadlineSeconds": "900",
+    "maxEvidenceLength": "4000",
+    "joinWindowSeconds": "3600",
+    "joinDeadline": "1795294104"
+  },
+  "statement": "The route the agent committed to for transfer A-20261121-194815 broke the user's mandate, given the routes LI.FI offered at 2026-11-21T19:48:15.892Z.",
+  "readBack": {
+    "partyA": "0x7055253B63DAca37c33F1cD265F8ae6A1fb7B63D",
+    "partyB": "0x68AE9C1f7C578f43A31591a5719F88ED1AFb1B93",
+    "status": 1,
+    "verdict": 0,
+    "escrowAmount": "5000000",
+    "evidenceDeadlineSeconds": "900",
+    "disputeTimestamp": "0",
+    "disputeInitiator": "0x0000000000000000000000000000000000000000",
+    "evidenceASubmitted": false,
+    "evidenceBSubmitted": false,
+    "statement": "The route the agent committed to for transfer A-20261121-194815 broke the user's mandate, given the routes LI.FI offered at 2026-11-21T19:48:15.892Z.",
+    "reasoning": "",
+    "proposalA": 0,
+    "proposalB": 0,
+    "statusName": "ACTIVE",
+    "verdictName": "UNDETERMINED"
+  }
+}

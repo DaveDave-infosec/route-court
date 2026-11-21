@@ -1,0 +1,14 @@
+{
+  "contract": "0xf20126D9bdD345069E0C65B66811E05A22480686",
+  "chain": "GenLayer Studio Next (61997)",
+  "tx": "0x17490da797e667ca54cd668b1c934d55e6bd6491b4007b09435d20028d17aae9",
+  "filer": "0xc564770d72da27d7eb77276809ddb06ebe5f9ed9",
+  "case_ref": "A-20261121-194815",
+  "judged": true,
+  "verdict": "FALSE",
+  "reasoning": "LI.FI Intents was the highest-net route that met the 10-minute requirement, with 6s estimated time and one hop. The faster AcrossV4 and Relay routes delivered less net value, so choosing Intents did not overpay for speed. The cheaper Polymer route was outside the mandated time window, making it not sensible. The agent's choice therefore honored the mandate's wording.",
+  "statement": "The route the agent committed to for transfer A-20261121-194815 broke the user's mandate, given the routes LI.FI offered at 2026-11-21T19:48:15.892Z.",
+  "snapshot_sha256": "539e868b86e537d358beb29ace18310c387e224d7647cea1303e98bc3f442eb8",
+  "agreement": "0x8434312a8a8a048897bb59da57838ad1cafcbef3",
+  "at": "2026-11-21T19:53:01.287Z"
+}

@@ -1,0 +1,10 @@
+{
+  "agreement": "0x8434312A8A8A048897Bb59Da57838AD1cafcBEF3",
+  "initiator": "0x7055253B63DAca37c33F1cD265F8ae6A1fb7B63D",
+  "disputeTimestamp": "1795290708",
+  "windowEnds": 1795291608,
+  "genlayerVerdict": "FALSE",
+  "winner": "AGENT",
+  "evidenceTx": "0x5c372acdd9156f61490cb45072bdd1420a6c794a969c3c384e09534661e49ebb",
+  "evidenceChars": 2176
+}

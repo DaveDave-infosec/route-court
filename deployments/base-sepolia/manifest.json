@@ -1,0 +1,333 @@
+{
+  "project": "Route Court: LI.FI x Internet Court x GenLayer",
+  "generatedAt": "2026-11-21T20:27:10.405Z",
+  "networks": {
+    "baseSepolia": 84532,
+    "genlayerStudioNext": 61997
+  },
+  "contracts": {
+    "internetCourtFactory": "0xd533cB0B52E85b3F506b6f0c28b8f6bc4E449Dda",
+    "bridgeReceiver": "0xc3e6ae892a704c875bf74df46ed873308db15d82",
+    "mockUSDC": "0x58C27C7C1Ff5DBF480c956acf6b119508b6FBa4f",
+    "routeJudge": "0xf20126D9bdD345069E0C65B66811E05A22480686"
+  },
+  "wallets": {
+    "USER": "0x7055253B63DAca37c33F1cD265F8ae6A1fb7B63D",
+    "AGENT": "0x68AE9C1f7C578f43A31591a5719F88ED1AFb1B93",
+    "note": "demo wallets, both controlled by the builder"
+  },
+  "juryRelay": "Internet Court's GenLayer relay delivered no verdict on Base Sepolia since 2026-03-19 (see discovery/GATE0.md). Fallback B: Route Court judge on GenLayer Studio Next rules; only the favoured side submits evidence; resolveByDefault settles.",
+  "cases": {
+    "A": {
+      "caseRef": "A-20261121-194815",
+      "agentMode": "faithful",
+      "capturedAt": "2026-11-21T19:48:15.892Z",
+      "snapshot": {
+        "path": "cases/A-20261121-194815/snapshot.json",
+        "sha256": "539e868b86e537d358beb29ace18310c387e224d7647cea1303e98bc3f442eb8",
+        "lifiResponseSha256": "50a62d595528f1dc6923d4db5af34c4dfb9a59043af63d714b8e56dccb6e39b8",
+        "routes": 13
+      },
+      "chosen": {
+        "tools": [
+          "LI.FI Intents"
+        ],
+        "netReceivedUSD": 997.400212,
+        "durationSec": 6,
+        "onTopFeesUSD": 0
+      },
+      "bestInTime": {
+        "tools": [
+          "LI.FI Intents"
+        ],
+        "netReceivedUSD": 997.400212,
+        "durationSec": 6
+      },
+      "chosenVsBest": {
+        "bestRouteId": "95935b35-41e5-4770-b1ef-90a8c9c300ec",
+        "netDiffUSD": 0,
+        "netDiffPct": 0,
+        "durationDiffSec": 0,
+        "stepDiff": 0
+      },
+      "internetCourt": {
+        "agreement": "0x8434312A8A8A048897Bb59Da57838AD1cafcBEF3",
+        "agreementLink": "https://sepolia.basescan.org/address/0x8434312A8A8A048897Bb59Da57838AD1cafcBEF3",
+        "id": 21,
+        "statement": "The route the agent committed to for transfer A-20261121-194815 broke the user's mandate, given the routes LI.FI offered at 2026-11-21T19:48:15.892Z.",
+        "terms": {
+          "escrowUSDC": "5",
+          "evidenceDeadlineSeconds": "900",
+          "maxEvidenceLength": "4000",
+          "joinWindowSeconds": "3600",
+          "joinDeadline": "1795294104"
+        },
+        "createTx": "https://sepolia.basescan.org/tx/0x84dbf36c4c8633b0184e715c2148f6a5c6709a83b277ca3f379205bc90bba7b4",
+        "evidenceTx": "https://sepolia.basescan.org/tx/0x5c372acdd9156f61490cb45072bdd1420a6c794a969c3c384e09534661e49ebb",
+        "evidenceSubmittedBy": "AGENT",
+        "verdict": "FALSE_",
+        "resolutionReasoning": "Resolved by default - only non-initiator submitted evidence",
+        "claimTx": "https://sepolia.basescan.org/tx/0xce901e55790baab3d9afaa0f691fd9c33e4ab939a3e9e63d71e3734f32c8ae63",
+        "balancesBefore": {
+          "USER": "95",
+          "AGENT": "0",
+          "escrow": "5"
+        },
+        "balancesAfter": {
+          "USER": "95",
+          "AGENT": "5",
+          "escrow": "0"
+        }
+      },
+      "genlayer": {
+        "judge": "0xf20126D9bdD345069E0C65B66811E05A22480686",
+        "chain": "GenLayer Studio Next (61997)",
+        "tx": "0x17490da797e667ca54cd668b1c934d55e6bd6491b4007b09435d20028d17aae9",
+        "verdict": "FALSE",
+        "reasoning": "LI.FI Intents was the highest-net route that met the 10-minute requirement, with 6s estimated time and one hop. The faster AcrossV4 and Relay routes delivered less net value, so choosing Intents did not overpay for speed. The cheaper Polymer route was outside the mandated time window, making it not sensible. The agent's choice therefore honored the mandate's wording."
+      },
+      "verdictsMatch": true
+    },
+    "B": {
+      "caseRef": "B-20261121-200925",
+      "agentMode": "preferred",
+      "capturedAt": "2026-11-21T20:09:25.435Z",
+      "snapshot": {
+        "path": "cases/B-20261121-200925/snapshot.json",
+        "sha256": "5b9b9ef69eb40858869158e2faf55c049f5a3643d77975118683d461f60dd6ea",
+        "lifiResponseSha256": "a9d9069208c94ce76a0ab263ab1ecbf8d2328b0b25a20f216eb7ceff21f6206d",
+        "routes": 13
+      },
+      "chosen": {
+        "tools": [
+          "StargateV2 (Fast mode)"
+        ],
+        "netReceivedUSD": 995.550317,
+        "durationSec": 27,
+        "onTopFeesUSD": 1.3383
+      },
+      "bestInTime": {
+        "tools": [
+          "LI.FI Intents",
+          "Smart Deposits"
+        ],
+        "netReceivedUSD": 997.40927,
+        "durationSec": 6
+      },
+      "chosenVsBest": {
+        "bestRouteId": "665a0552-815b-483e-bc8f-f347d509c507",
+        "netDiffUSD": 1.858953,
+        "netDiffPct": 0.185895,
+        "durationDiffSec": -21,
+        "stepDiff": -1
+      },
+      "internetCourt": {
+        "agreement": "0xac99D4E1f4c23ee96bEBd30D0488734049Fb12Ba",
+        "agreementLink": "https://sepolia.basescan.org/address/0xac99D4E1f4c23ee96bEBd30D0488734049Fb12Ba",
+        "id": 22,
+        "statement": "The route the agent committed to for transfer B-20261121-200925 broke the user's mandate, given the routes LI.FI offered at 2026-11-21T20:09:25.435Z.",
+        "terms": {
+          "escrowUSDC": "5",
+          "evidenceDeadlineSeconds": "900",
+          "maxEvidenceLength": "4000",
+          "joinWindowSeconds": "3600",
+          "joinDeadline": "1795295376"
+        },
+        "createTx": "https://sepolia.basescan.org/tx/0x1d232f517dbeb1ea12aec190a5fff33bef1895b7b0a7064aa793ac9a85f4a032",
+        "evidenceTx": "https://sepolia.basescan.org/tx/0xc4a4aa6285bcbe84f2cefe15629e3f2ea948278c7b1c8d67f8b48642a9ffabd0",
+        "evidenceSubmittedBy": "USER",
+        "verdict": "TRUE_",
+        "resolutionReasoning": "Resolved by default - only dispute initiator submitted evidence",
+        "claimTx": "https://sepolia.basescan.org/tx/0xbb0e6e79ef08dfa92b8da183430401cb95a56453f41e7a8321187835a22a2ff3",
+        "balancesBefore": {
+          "USER": "90",
+          "AGENT": "5",
+          "escrow": "5"
+        },
+        "balancesAfter": {
+          "USER": "95",
+          "AGENT": "5",
+          "escrow": "0"
+        }
+      },
+      "genlayer": {
+        "judge": "0xf20126D9bdD345069E0C65B66811E05A22480686",
+        "chain": "GenLayer Studio Next (61997)",
+        "tx": "0x62dd6b31760875779d0e9267234d39514cc0238c131ed736cfae84ea3c69a341",
+        "verdict": "TRUE",
+        "reasoning": "StargateV2 met the 10-minute limit, but AcrossV4 was also a single-hop route, arrived in 1 second rather than 27 seconds, and delivered $1.8417 more. Avoiding the two-hop LI.FI route could be sensible because it saved only $0.0173 over AcrossV4, but that does not justify choosing StargateV2 over the cheaper, faster single-hop alternative. The evidence establishes no additional benefit that makes StargateV2's higher cost consistent with 'cheapest sensible' or 'do not overpay for speed.'"
+      },
+      "verdictsMatch": true
+    }
+  },
+  "guards": [
+    {
+      "case": "A",
+      "agreement": "0x8434312A8A8A048897Bb59Da57838AD1cafcBEF3",
+      "at": "2026-11-21T19:51:43.724Z",
+      "guard": "1. non-party raiseDispute",
+      "caller": "0xc014F28C9B4168C2505843a52818376024a02451",
+      "reverted": true,
+      "reason": "Only a party",
+      "tx": "0xe8fe3cd9c8579efec3ced3f2531e6ae0b091e18579e1ec095bb4bf4527e16a40"
+    },
+    {
+      "case": "A",
+      "agreement": "0x8434312A8A8A048897Bb59Da57838AD1cafcBEF3",
+      "at": "2026-11-21T19:53:09.024Z",
+      "guard": "2. second raiseDispute by USER",
+      "caller": "0x7055253B63DAca37c33F1cD265F8ae6A1fb7B63D",
+      "reverted": true,
+      "reason": "Wrong status",
+      "tx": "0xf182a777c161fe7e74b8f3404fb430f7ecbcf87cc6d28cfc8ab62dc6b042d2ca"
+    },
+    {
+      "case": "A",
+      "agreement": "0x8434312A8A8A048897Bb59Da57838AD1cafcBEF3",
+      "at": "2026-11-21T19:53:09.032Z",
+      "guard": "4. off-chain hash mismatch",
+      "refused": true,
+      "message": "REFUSED: evidence quotes 039e868b86e537d358beb29ace18310c387e224d7647cea1303e98bc3f442eb8 but snapshot.json hashes to 539e868b86e537d358beb29ace18310c387e224d7647cea1303e98bc3f442eb8"
+    },
+    {
+      "case": "A",
+      "agreement": "0x8434312A8A8A048897Bb59Da57838AD1cafcBEF3",
+      "at": "2026-11-21T20:06:55.003Z",
+      "guard": "3. late submitEvidence by USER",
+      "caller": "0x7055253B63DAca37c33F1cD265F8ae6A1fb7B63D",
+      "reverted": true,
+      "reason": "Evidence deadline passed",
+      "tx": "0x949e0842d6d307a962b4b9a68f50651c18443ceed639646f4f67dc03f71f3775"
+    }
+  ],
+  "transactions": [
+    {
+      "at": "2026-11-21T19:29:55.712Z",
+      "label": "fund AGENT gas",
+      "hash": "0xd7a1c11d1a6bb6b185c2b42a17542adddf191d51806a877e140e4c20e4dcf496",
+      "status": "success",
+      "block": 61837635,
+      "link": "https://sepolia.basescan.org/tx/0xd7a1c11d1a6bb6b185c2b42a17542adddf191d51806a877e140e4c20e4dcf496"
+    },
+    {
+      "at": "2026-11-21T19:29:57.229Z",
+      "label": "mint 100 MockUSDC to USER",
+      "hash": "0x19324d0df4f4390286e8dbb475f2d73141d90acf90388645450e6751373d7885",
+      "status": "success",
+      "block": 61837642,
+      "link": "https://sepolia.basescan.org/tx/0x19324d0df4f4390286e8dbb475f2d73141d90acf90388645450e6751373d7885"
+    },
+    {
+      "at": "2026-11-21T19:48:23.871Z",
+      "label": "approve factory 5 MockUSDC",
+      "hash": "0xd4081862950218c55ee5c57d11a7c1f9d056d8c3a39741fef17256cc0b7b7275",
+      "status": "success",
+      "block": 61843176,
+      "link": "https://sepolia.basescan.org/tx/0xd4081862950218c55ee5c57d11a7c1f9d056d8c3a39741fef17256cc0b7b7275"
+    },
+    {
+      "at": "2026-11-21T19:48:25.673Z",
+      "label": "createAgreement case A",
+      "hash": "0x84dbf36c4c8633b0184e715c2148f6a5c6709a83b277ca3f379205bc90bba7b4",
+      "status": "success",
+      "block": 61843185,
+      "link": "https://sepolia.basescan.org/tx/0x84dbf36c4c8633b0184e715c2148f6a5c6709a83b277ca3f379205bc90bba7b4"
+    },
+    {
+      "at": "2026-11-21T19:48:27.266Z",
+      "label": "acceptAgreement case A",
+      "hash": "0x98803f63c3eb5bd17dd46cc20191fc87e0be343d6d14e0f5d83973ff7498e65c",
+      "status": "success",
+      "block": 61843192,
+      "link": "https://sepolia.basescan.org/tx/0x98803f63c3eb5bd17dd46cc20191fc87e0be343d6d14e0f5d83973ff7498e65c"
+    },
+    {
+      "at": "2026-11-21T19:51:48.823Z",
+      "label": "raiseDispute case A (USER)",
+      "hash": "0x2e65cb1aef45f694326fd163139b59995447bde3d03571b180292a529e50d2b0",
+      "status": "success",
+      "block": 61844200,
+      "link": "https://sepolia.basescan.org/tx/0x2e65cb1aef45f694326fd163139b59995447bde3d03571b180292a529e50d2b0"
+    },
+    {
+      "at": "2026-11-21T19:53:03.216Z",
+      "label": "submitEvidence case A (AGENT, 2176 chars)",
+      "hash": "0x5c372acdd9156f61490cb45072bdd1420a6c794a969c3c384e09534661e49ebb",
+      "status": "success",
+      "block": 61844572,
+      "link": "https://sepolia.basescan.org/tx/0x5c372acdd9156f61490cb45072bdd1420a6c794a969c3c384e09534661e49ebb"
+    },
+    {
+      "at": "2026-11-21T20:07:03.177Z",
+      "label": "resolveByDefault case A",
+      "hash": "0x71ae71b9da556e58204ad3b3ffa2586de8466250a8022c997380f7b440593f0a",
+      "status": "success",
+      "block": 61848772,
+      "link": "https://sepolia.basescan.org/tx/0x71ae71b9da556e58204ad3b3ffa2586de8466250a8022c997380f7b440593f0a"
+    },
+    {
+      "at": "2026-11-21T20:07:05.202Z",
+      "label": "claimFunds case A (AGENT)",
+      "hash": "0xce901e55790baab3d9afaa0f691fd9c33e4ab939a3e9e63d71e3734f32c8ae63",
+      "status": "success",
+      "block": 61848782,
+      "link": "https://sepolia.basescan.org/tx/0xce901e55790baab3d9afaa0f691fd9c33e4ab939a3e9e63d71e3734f32c8ae63"
+    },
+    {
+      "at": "2026-11-21T20:09:36.375Z",
+      "label": "approve factory 5 MockUSDC",
+      "hash": "0xf8b64a219eaf1eb5616b88ab2690f63527e04433e809a12df6109270e8169064",
+      "status": "success",
+      "block": 61849538,
+      "link": "https://sepolia.basescan.org/tx/0xf8b64a219eaf1eb5616b88ab2690f63527e04433e809a12df6109270e8169064"
+    },
+    {
+      "at": "2026-11-21T20:09:38.229Z",
+      "label": "createAgreement case B",
+      "hash": "0x1d232f517dbeb1ea12aec190a5fff33bef1895b7b0a7064aa793ac9a85f4a032",
+      "status": "success",
+      "block": 61849547,
+      "link": "https://sepolia.basescan.org/tx/0x1d232f517dbeb1ea12aec190a5fff33bef1895b7b0a7064aa793ac9a85f4a032"
+    },
+    {
+      "at": "2026-11-21T20:09:39.801Z",
+      "label": "acceptAgreement case B",
+      "hash": "0x5f590fcb5c72c32635f6e14b2a61780542db76a720fc63b3f8a8bb9a8fe5221d",
+      "status": "success",
+      "block": 61849555,
+      "link": "https://sepolia.basescan.org/tx/0x5f590fcb5c72c32635f6e14b2a61780542db76a720fc63b3f8a8bb9a8fe5221d"
+    },
+    {
+      "at": "2026-11-21T20:09:45.699Z",
+      "label": "raiseDispute case B (USER)",
+      "hash": "0x07a5c2e00bd86a89e324a139277f70fe81157cc4d1c6ff850919291f69687e77",
+      "status": "success",
+      "block": 61849585,
+      "link": "https://sepolia.basescan.org/tx/0x07a5c2e00bd86a89e324a139277f70fe81157cc4d1c6ff850919291f69687e77"
+    },
+    {
+      "at": "2026-11-21T20:11:13.281Z",
+      "label": "submitEvidence case B (USER, 2540 chars)",
+      "hash": "0xc4a4aa6285bcbe84f2cefe15629e3f2ea948278c7b1c8d67f8b48642a9ffabd0",
+      "status": "success",
+      "block": 61850023,
+      "link": "https://sepolia.basescan.org/tx/0xc4a4aa6285bcbe84f2cefe15629e3f2ea948278c7b1c8d67f8b48642a9ffabd0"
+    },
+    {
+      "at": "2026-11-21T20:25:16.312Z",
+      "label": "resolveByDefault case B",
+      "hash": "0x9777b1aa679550eb875b44f1ac1276249e8eaaea0789b2ca8868e1d7b9b9cf90",
+      "status": "success",
+      "block": 61854238,
+      "link": "https://sepolia.basescan.org/tx/0x9777b1aa679550eb875b44f1ac1276249e8eaaea0789b2ca8868e1d7b9b9cf90"
+    },
+    {
+      "at": "2026-11-21T20:25:18.377Z",
+      "label": "claimFunds case B (USER)",
+      "hash": "0xbb0e6e79ef08dfa92b8da183430401cb95a56453f41e7a8321187835a22a2ff3",
+      "status": "success",
+      "block": 61854248,
+      "link": "https://sepolia.basescan.org/tx/0xbb0e6e79ef08dfa92b8da183430401cb95a56453f41e7a8321187835a22a2ff3"
+    }
+  ]
+}

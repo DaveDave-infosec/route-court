@@ -1,0 +1,15 @@
+SNAPSHOT sha256: 539e868b86e537d358beb29ace18310c387e224d7647cea1303e98bc3f442eb8
+SOURCE: https://github.com/DaveDave-infosec/route-court/blob/main/cases/A-20261121-194815/snapshot.json (sha256 above is authoritative)
+MANDATE: Move my USDC from Base to Arbitrum. Pick the cheapest sensible route. It must arrive within 10 minutes. Do not overpay for speed, and avoid multi-hop routes unless they save real money.
+TRANSFER: 1000 USDC, chain 8453 (Base) to 42161 (Arbitrum). Routes captured from LI.FI at 2026-11-21T19:48:15.892Z.
+NET = USDC delivered minus gas minus fees paid on top of the quote (USDC valued at $1). Time = LI.FI estimate.
+ROUTES OFFERED (top 5 by net received, of 13):
+1. Polymer (Standard) | net $997.4966 | 1080s | 1 hop | paid on top $0.0000 | TOO SLOW | RECOMMENDED,CHEAPEST
+2. LI.FI Intents | net $997.4002 | 6s | 1 hop | paid on top $0.0000 | in time | -
+3. CCTP + Celer (Standard) | net $997.3970 | 1229s | 1 hop | paid on top $0.0000 | TOO SLOW | -
+4. AcrossV4 | net $997.3920 | 1s | 1 hop | paid on top $0.0000 | in time | FASTEST
+5. Relay | net $997.3752 | 1s | 1 hop | paid on top $0.0000 | in time | FASTEST
+AGENT CHOSE: LI.FI Intents | net $997.4002 | 6s | 1 hop | paid on top $0.0000 | in time | -
+BEST IN-TIME ROUTE: LI.FI Intents | net $997.4002 | 6s | 1 hop | paid on top $0.0000 | in time | -
+CHOSEN VS BEST: $0.0000 (0.0000%) less received, same time, 0 more hops.
+POSITION (AGENT): I chose LI.FI Intents: in time (6s), single hop, and the highest net received of all in-time routes. That is the cheapest sensible route the mandate asked for.

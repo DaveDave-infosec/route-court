@@ -1,0 +1,18 @@
+{
+  "A": {
+    "caseRef": "A-20261121-194815",
+    "dir": "cases/A-20261121-194815",
+    "sha256": "539e868b86e537d358beb29ace18310c387e224d7647cea1303e98bc3f442eb8",
+    "mode": "faithful",
+    "capturedAt": "2026-11-21T19:48:15.892Z",
+    "agreement": "0x8434312A8A8A048897Bb59Da57838AD1cafcBEF3"
+  },
+  "B": {
+    "caseRef": "B-20261121-200925",
+    "dir": "cases/B-20261121-200925",
+    "sha256": "5b9b9ef69eb40858869158e2faf55c049f5a3643d77975118683d461f60dd6ea",
+    "mode": "preferred",
+    "capturedAt": "2026-11-21T20:09:25.435Z",
+    "agreement": "0xac99D4E1f4c23ee96bEBd30D0488734049Fb12Ba"
+  }
+}

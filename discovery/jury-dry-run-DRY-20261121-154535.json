@@ -1,0 +1,14 @@
+{
+  "contract": "0xf20126D9bdD345069E0C65B66811E05A22480686",
+  "chain": "GenLayer Studio Next (61997)",
+  "tx": "0xf0e39e5fbed2f6feb109877a709bfd7032cab0b9bf53fb409063e10f76f053c1",
+  "filer": "0xc564770d72da27d7eb77276809ddb06ebe5f9ed9",
+  "case_ref": "DRY-20261121-154535",
+  "judged": true,
+  "verdict": "TRUE",
+  "reasoning": "The mandate explicitly required picking the cheapest sensible route that arrives within 10 minutes without overpaying for speed. The agent chose StargateV2, which was both slower and significantly more expensive than the available LI.FI Intents route, resulting in $1.9122 less received plus additional fees. This choice directly violated the instruction not to overpay when a faster and cheaper sensible alternative existed.",
+  "statement": "The route the agent committed to for transfer DRY-20261121-154535 broke the user's mandate, given the routes LI.FI offered at 2026-11-21T15:45:35.761Z.",
+  "snapshot_sha256": "3131fd9e44437960d29aa7329a036bef01bdb46b0818b78bd2bd51338cdf1f2f",
+  "agreement": "none (dry run)",
+  "at": "2026-11-21T19:04:27.261Z"
+}

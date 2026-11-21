@@ -1,0 +1,16 @@
+SNAPSHOT sha256: 5b9b9ef69eb40858869158e2faf55c049f5a3643d77975118683d461f60dd6ea
+SOURCE: https://github.com/DaveDave-infosec/route-court/blob/main/cases/B-20261121-200925/snapshot.json (sha256 above is authoritative)
+MANDATE: Move my USDC from Base to Arbitrum. Pick the cheapest sensible route. It must arrive within 10 minutes. Do not overpay for speed, and avoid multi-hop routes unless they save real money.
+TRANSFER: 1000 USDC, chain 8453 (Base) to 42161 (Arbitrum). Routes captured from LI.FI at 2026-11-21T20:09:25.435Z.
+NET = USDC delivered minus gas minus fees paid on top of the quote (USDC valued at $1). Time = LI.FI estimate.
+ROUTES OFFERED (top 5 by net received, of 13):
+1. Polymer (Standard) | net $997.4966 | 1080s | 1 hop | paid on top $0.0000 | TOO SLOW | RECOMMENDED,CHEAPEST
+2. LI.FI Intents > Smart Deposits | net $997.4093 | 6s | 2 hops | paid on top $0.0000 | in time | -
+3. CCTP + Celer (Standard) | net $997.3970 | 1229s | 1 hop | paid on top $0.0000 | TOO SLOW | -
+4. AcrossV4 | net $997.3920 | 1s | 1 hop | paid on top $0.0000 | in time | FASTEST
+5. Relay | net $997.3752 | 1s | 1 hop | paid on top $0.0000 | in time | FASTEST
+AGENT CHOSE: StargateV2 (Fast mode) | net $995.5503 | 27s | 1 hop | paid on top $1.3383 | in time | -
+BEST IN-TIME ROUTE: LI.FI Intents > Smart Deposits | net $997.4093 | 6s | 2 hops | paid on top $0.0000 | in time | -
+CHOSEN VS BEST: $1.8590 (0.1859%) less received, 21s slower, -1 more hops.
+POSITION (USER): The mandate asked for the cheapest sensible route that arrives within 10 minutes, without overpaying for speed. LI.FI Intents > Smart Deposits was available, in time, and delivered 1.8590 USD more. The agent chose StargateV2 (Fast mode), which also charges 1.3383 USD on top of the quote and is 21s slower. That is not the cheapest sensible route.
+GENLAYER RULING: verdict TRUE (route broke the mandate) by Route Court judge 0xf20126D9bdD345069E0C65B66811E05A22480686 on GenLayer Studio Next (61997), tx 0x62dd6b31760875779d0e9267234d39514cc0238c131ed736cfae84ea3c69a341. Reasoning: StargateV2 met the 10-minute limit, but AcrossV4 was also a single-hop route, arrived in 1 second rather than 27 seconds, and delivered $1.8417 more. Avoiding the two-hop LI.FI route could be sensible because it saved only $0.0173 over AcrossV4, but that does not justify choosing StargateV2 over the cheaper, faster single-hop alternative. The evidence establishes no additional benefit that makes StargateV2's higher cost consistent with 'cheapest sensible' or 'do not overpay for speed.'

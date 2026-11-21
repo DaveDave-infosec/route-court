@@ -1,0 +1,10 @@
+{
+  "agreement": "0xac99D4E1f4c23ee96bEBd30D0488734049Fb12Ba",
+  "initiator": "0x7055253B63DAca37c33F1cD265F8ae6A1fb7B63D",
+  "disputeTimestamp": "1795291785",
+  "windowEnds": 1795292685,
+  "genlayerVerdict": "TRUE",
+  "winner": "USER",
+  "evidenceTx": "0xc4a4aa6285bcbe84f2cefe15629e3f2ea948278c7b1c8d67f8b48642a9ffabd0",
+  "evidenceChars": 2540
+}

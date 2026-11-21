@@ -1,0 +1,5 @@
+# Hashed evidence must stay byte-for-byte identical on every OS (no CRLF conversion).
+cases/** -text
+tests/fixtures/** -text
+discovery/** -text
+deployments/** -text

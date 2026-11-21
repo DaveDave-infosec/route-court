@@ -1,0 +1,14 @@
+{
+  "contract": "0xf20126D9bdD345069E0C65B66811E05A22480686",
+  "chain": "GenLayer Studio Next (61997)",
+  "tx": "0x62dd6b31760875779d0e9267234d39514cc0238c131ed736cfae84ea3c69a341",
+  "filer": "0xc564770d72da27d7eb77276809ddb06ebe5f9ed9",
+  "case_ref": "B-20261121-200925",
+  "judged": true,
+  "verdict": "TRUE",
+  "reasoning": "StargateV2 met the 10-minute limit, but AcrossV4 was also a single-hop route, arrived in 1 second rather than 27 seconds, and delivered $1.8417 more. Avoiding the two-hop LI.FI route could be sensible because it saved only $0.0173 over AcrossV4, but that does not justify choosing StargateV2 over the cheaper, faster single-hop alternative. The evidence establishes no additional benefit that makes StargateV2's higher cost consistent with 'cheapest sensible' or 'do not overpay for speed.'",
+  "statement": "The route the agent committed to for transfer B-20261121-200925 broke the user's mandate, given the routes LI.FI offered at 2026-11-21T20:09:25.435Z.",
+  "snapshot_sha256": "5b9b9ef69eb40858869158e2faf55c049f5a3643d77975118683d461f60dd6ea",
+  "agreement": "0xac99d4e1f4c23ee96bebd30d0488734049fb12ba",
+  "at": "2026-11-21T20:11:11.281Z"
+}

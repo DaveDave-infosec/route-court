@@ -1,0 +1,40 @@
+[
+  {
+    "case": "A",
+    "agreement": "0x8434312A8A8A048897Bb59Da57838AD1cafcBEF3",
+    "at": "2026-11-21T19:51:43.724Z",
+    "guard": "1. non-party raiseDispute",
+    "caller": "0xc014F28C9B4168C2505843a52818376024a02451",
+    "reverted": true,
+    "reason": "Only a party",
+    "tx": "0xe8fe3cd9c8579efec3ced3f2531e6ae0b091e18579e1ec095bb4bf4527e16a40"
+  },
+  {
+    "case": "A",
+    "agreement": "0x8434312A8A8A048897Bb59Da57838AD1cafcBEF3",
+    "at": "2026-11-21T19:53:09.024Z",
+    "guard": "2. second raiseDispute by USER",
+    "caller": "0x7055253B63DAca37c33F1cD265F8ae6A1fb7B63D",
+    "reverted": true,
+    "reason": "Wrong status",
+    "tx": "0xf182a777c161fe7e74b8f3404fb430f7ecbcf87cc6d28cfc8ab62dc6b042d2ca"
+  },
+  {
+    "case": "A",
+    "agreement": "0x8434312A8A8A048897Bb59Da57838AD1cafcBEF3",
+    "at": "2026-11-21T19:53:09.032Z",
+    "guard": "4. off-chain hash mismatch",
+    "refused": true,
+    "message": "REFUSED: evidence quotes 039e868b86e537d358beb29ace18310c387e224d7647cea1303e98bc3f442eb8 but snapshot.json hashes to 539e868b86e537d358beb29ace18310c387e224d7647cea1303e98bc3f442eb8"
+  },
+  {
+    "case": "A",
+    "agreement": "0x8434312A8A8A048897Bb59Da57838AD1cafcBEF3",
+    "at": "2026-11-21T20:06:55.003Z",
+    "guard": "3. late submitEvidence by USER",
+    "caller": "0x7055253B63DAca37c33F1cD265F8ae6A1fb7B63D",
+    "reverted": true,
+    "reason": "Evidence deadline passed",
+    "tx": "0x949e0842d6d307a962b4b9a68f50651c18443ceed639646f4f67dc03f71f3775"
+  }
+]

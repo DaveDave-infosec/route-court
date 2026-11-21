@@ -1,0 +1,16 @@
+{
+  "capturedAt": "2026-11-21T15:33:03.289Z",
+  "request": {
+    "fromChainId": 8453,
+    "toChainId": 42161,
+    "fromTokenAddress": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "toTokenAddress": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+    "fromAmount": "1000000000",
+    "fromAddress": "0x552008c0f6870c2f77e5cC1d2eb9bdff03e30Ea0",
+    "toAddress": "0x552008c0f6870c2f77e5cC1d2eb9bdff03e30Ea0",
+    "options": {
+      "slippage": 0.005,
+      "allowSwitchChain": false
+    }
+  }
+}

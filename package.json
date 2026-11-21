@@ -1,0 +1,30 @@
+{
+  "name": "route-court",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Route Court: LI.FI x Internet Court x GenLayer. Agents that route funds through LI.FI are held to the user's mandate.",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "discover": "node --env-file-if-exists=.env scripts/00-discover.mjs",
+    "test": "node --test tests/facts.test.mjs",
+    "lifi-probe": "node --env-file-if-exists=.env scripts/01-lifi-probe.mjs",
+    "dry-run": "node --env-file-if-exists=.env scripts/10-agent-pick.mjs --dry-run",
+    "pick": "node --env-file-if-exists=.env scripts/10-agent-pick.mjs",
+    "judge": "node --env-file-if-exists=.env scripts/35-judge.mjs",
+    "wallets": "node --env-file-if-exists=.env scripts/05-wallets.mjs",
+    "open-case": "node --env-file-if-exists=.env scripts/20-open-case.mjs",
+    "dispute": "node --env-file-if-exists=.env scripts/30-dispute.mjs",
+    "resolve": "node --env-file-if-exists=.env scripts/40-resolve.mjs",
+    "guards": "node --env-file-if-exists=.env scripts/50-guards.mjs",
+    "manifest": "node --env-file-if-exists=.env scripts/60-manifest.mjs",
+    "verify": "node scripts/70-verify.mjs",
+    "demo": "node --env-file-if-exists=.env scripts/demo.mjs"
+  },
+  "dependencies": {
+    "viem": "2.54.6",
+    "genlayer-js": "2.0.0-rc.3"
+  }
+}
