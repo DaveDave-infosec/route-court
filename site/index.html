@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Route Court: was it the route you asked for?</title>
 <meta name="description" content="An AI agent picked a LI.FI route with your money. Internet Court holds its fee, GenLayer judges the choice against the routes LI.FI really offered.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,600;0,800;0,900;1,400&display=swap" rel="stylesheet">
@@ -149,6 +150,11 @@
   .lbl { font-family: "Overpass", sans-serif; font-weight: 800; font-size: 15px; }
   .lbl-sub { font-family: "Overpass", sans-serif; font-size: 13px; fill: var(--ink-2); }
 
+  @media (max-width: 700px) {
+    .chart-scroll { overflow-x: auto; margin: 0 -8px; padding: 0 8px 6px; }
+    .chart-scroll svg { min-width: 720px; }
+  }
+  html, body { overflow-x: clip; }
   @media (max-width: 860px) {
     .verdict, .two, .levels { grid-template-columns: 1fr; gap: 28px; }
     .steps { grid-template-columns: 1fr; }
@@ -164,7 +170,19 @@
 <div class="wrap">
   <div class="bar">
     <a class="brand" href="#top" aria-label="Route Court home">
-      <svg width="46" height="18" viewBox="0 0 46 18" aria-hidden="true"><line x1="6" y1="9" x2="40" y2="9" stroke="#17202A" stroke-width="4" stroke-linecap="round"/><circle cx="6" cy="9" r="5" fill="#EEF1F4" stroke="#17202A" stroke-width="3"/><circle cx="40" cy="9" r="5" fill="#17202A"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" aria-hidden="true" viewBox="0 0 120 120">
+  
+  <!-- the ruling: a level balance standing on the route -->
+  <line x1="60" y1="74" x2="60" y2="36" stroke="#E8A317" stroke-width="5.5" stroke-linecap="round"/>
+  <line x1="38" y1="34" x2="82" y2="34" stroke="#E8A317" stroke-width="5.5" stroke-linecap="round"/>
+  <line x1="40" y1="35" x2="40" y2="47" stroke="#E8A317" stroke-width="2.6" stroke-linecap="round"/>
+  <line x1="80" y1="35" x2="80" y2="47" stroke="#E8A317" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M32 47 A8 6 0 0 0 48 47 Z M72 47 A8 6 0 0 0 88 47 Z" fill="#E8A317"/>
+  <!-- the route: origin station (open ring) to destination station (filled) -->
+  <line x1="30" y1="78" x2="90" y2="78" stroke="#17202A" stroke-width="8.5" stroke-linecap="round"/>
+  <circle cx="29" cy="78" r="8.5" fill="#EEF1F4" stroke="#17202A" stroke-width="5.5"/>
+  <circle cx="91" cy="78" r="10.5" fill="#17202A"/>
+</svg>
       Route Court
     </a>
     <nav aria-label="Page">
@@ -197,7 +215,7 @@
 
     <div id="case-panel" role="tabpanel" aria-labelledby="tab-B">
       <div class="exhibit">
-        <svg id="chart" viewBox="0 0 1000 470" role="img" aria-labelledby="chart-title"><title id="chart-title">Routes offered by LI.FI</title></svg>
+        <div class="chart-scroll" tabindex="0" aria-label="Route chart, scrolls sideways on small screens"><svg id="chart" viewBox="0 0 1000 470" role="img" aria-labelledby="chart-title"><title id="chart-title">Routes offered by LI.FI</title></svg></div>
         <p class="readout" id="readout" aria-live="polite"></p>
         <div class="legend">
           <span><i class="swatch" style="background:var(--pick)"></i>Route the agent chose</span>
