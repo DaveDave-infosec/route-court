@@ -121,7 +121,7 @@
   .steps li:nth-child(3n)::after, .steps li:last-child::after { display: none; }
   .steps h3 { font-size: 1.08rem; }
   .steps p { margin: 0; color: var(--ink-2); font-size: .98rem; }
-  .where { display: inline-block; font-size: .85rem; font-weight: 600; color: var(--ink); background: var(--paper-2); border-radius: 4px; padding: 2px 7px 0; margin-bottom: 6px; }
+  .where { display: inline-block; font-size: .85rem; font-weight: 600; color: var(--ink); background: #F8FAFB; border: 1px solid #C9D1D9; border-radius: 4px; padding: 2px 7px 0; margin-bottom: 6px; }
 
   .two { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; }
   .two p { max-width: 60ch; }
@@ -144,7 +144,7 @@
   /* Chart */
   .ax text { fill: var(--ink-2); font-size: 13px; font-family: "Overpass", sans-serif; }
   .ax line { stroke: #D3DAE1; }
-  .dot { fill: var(--route); stroke: #F8FAFB; stroke-width: 2; cursor: pointer; transition: r .15s; }
+  .dot { stroke: #F8FAFB; stroke-width: 2; cursor: pointer; transition: r .15s; }
   .dot:focus { outline: none; stroke: var(--ink); stroke-width: 3; }
   .lbl { font-family: "Overpass", sans-serif; font-weight: 800; font-size: 15px; }
   .lbl-sub { font-family: "Overpass", sans-serif; font-size: 13px; fill: var(--ink-2); }
@@ -308,8 +308,10 @@
   $("mandate-text").textContent = "“" + data.mandate + "”";
 
   // Static lists
-  $("guards").innerHTML = data.guards.map((g) =>
-    `<li><span>${esc(g.guard.replace(/^\d+\.\s*/, ""))}</span><span>${g.tx ? `<a href="${BASESCAN}/tx/${g.tx}">${esc(g.reason)}</a>` : esc(g.reason)}</span></li>`).join("");
+  const plain = { 1: "A stranger tries to raise a dispute", 2: "The user tries to dispute twice", 3: "Evidence sent after the deadline", 4: "Evidence quoting a forged snapshot hash" };
+  const num = (g) => Number(g.guard.match(/^(\d+)/)?.[1] ?? 9);
+  $("guards").innerHTML = [...data.guards].sort((a, b) => num(a) - num(b)).map((g) =>
+    `<li><span>${esc(plain[num(g)] ?? g.guard)}</span><span>${g.tx ? `<a href="${BASESCAN}/tx/${g.tx}">${esc(g.reason)}</a>` : esc(g.reason)}</span></li>`).join("");
   const c = data.contracts;
   $("contracts").innerHTML = [
     ["Internet Court factory", c.internetCourtFactory, `${BASESCAN}/address/${c.internetCourtFactory}`],
@@ -359,7 +361,7 @@
     cs.routes.forEach((r, i) => {
       const isPick = r.id === pick.id, isBest = r.id === best.id;
       const d = el("circle", { cx: x(r.secs), cy: y(r.net), r: isPick || isBest ? 10 : 6.5, class: "dot", tabindex: 0,
-        fill: isPick ? "var(--pick)" : isBest ? "var(--best)" : "var(--route)" }, g);
+        style: `fill: ${isPick ? "var(--pick)" : isBest ? "var(--best)" : "var(--route)"}` }, g);
       el("title", {}, d).textContent = `${name(r)}: ${usd(r.net)} delivered, ${secs(r.secs)}`;
       const show = () => { $("readout").innerHTML = `<strong>${esc(name(r))}</strong>: ${usd(r.net)} delivered after fees, ${secs(r.secs)}, ${r.hops} hop${r.hops > 1 ? "s" : ""}${r.onTop ? `, ${usd(r.onTop)} charged on top of the quote` : ""}${r.tags.length ? `. LI.FI tags it ${r.tags.join(" and ").toLowerCase()}` : ""}.`; };
       d.addEventListener("mouseenter", show); d.addEventListener("focus", show);
@@ -401,7 +403,7 @@
     const b0 = ic.balancesBefore, b1 = ic.balancesAfter;
     const row = (k, a, z) => `<tr><td>${k}</td><td>${a}</td><td class="${Number(z) > Number(a) ? "up" : ""}">${z}</td></tr>`;
     $("money").innerHTML = row("User", b0.USER, b1.USER) + row("Agent", b0.AGENT, b1.AGENT) + row("Held in the agreement", b0.escrow, b1.escrow);
-    $("ic-meta").innerHTML = `Agreement <a href="${ic.agreementLink}">#${ic.id}</a> settled ${ic.verdict}. <a href="${ic.evidenceTx}">Evidence</a> and <a href="${ic.claimTx}">claim</a> on Basescan.`;
+    $("ic-meta").innerHTML = `Agreement <a href="${ic.agreementLink}">#${ic.id}</a> settled ${refund ? "TRUE, which pays the user" : "FALSE, which pays the agent"}. <a href="${ic.evidenceTx}">Evidence</a> and <a href="${ic.claimTx}">claim</a> on Basescan.`;
 
     // table
     const rows = [...cs.routes].sort((a, b) => b.net - a.net);
