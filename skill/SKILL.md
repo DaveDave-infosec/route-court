@@ -64,7 +64,7 @@ GENLAYER RULING: <verdict, judge contract, tx, reasoning>   (relay-down mode onl
 POSITION (<party>): <argument>
 ```
 
-The jury must be able to rule from this string alone. Refuse to submit any evidence whose quoted hash does not match `snapshot.json` (`lib/cases.mjs`).
+GenLayer's validators must be able to rule from this string alone. Refuse to submit any evidence whose quoted hash does not match `snapshot.json` (`lib/cases.mjs`).
 
 ## Honest limits
 
