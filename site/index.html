@@ -396,8 +396,10 @@
     const g = el("g", {}, svg);
     cs.routes.forEach((r, i) => {
       const isPick = r.id === pick.id, isBest = r.id === best.id;
-      const d = el("circle", { cx: x(r.secs), cy: y(r.net), r: isPick || isBest ? 10 : 6.5, class: "dot", tabindex: 0,
-        style: `fill: ${isPick ? "var(--pick)" : isBest ? "var(--best)" : "var(--route)"}` }, g);
+      const d = el("circle", { cx: x(r.secs), cy: y(r.net), r: isPick && isBest ? 11 : isPick || isBest ? 10 : 6.5, class: "dot", tabindex: 0,
+        style: isPick && isBest
+          ? "fill: var(--best); stroke: var(--pick); stroke-width: 4"
+          : `fill: ${isPick ? "var(--pick)" : isBest ? "var(--best)" : "var(--route)"}` }, g);
       el("title", {}, d).textContent = `${name(r)}: ${usd(r.net)} delivered, ${secs(r.secs)}`;
       const show = () => { $("readout").innerHTML = `<strong>${esc(name(r))}</strong>: ${usd(r.net)} delivered after fees, ${secs(r.secs)}, ${r.hops} hop${r.hops > 1 ? "s" : ""}${r.onTop ? `, ${usd(r.onTop)} charged on top of the quote` : ""}${r.tags.length ? `. LI.FI tags it ${r.tags.join(" and ").toLowerCase()}` : ""}.`; };
       d.addEventListener("mouseenter", show); d.addEventListener("focus", show);
